@@ -2,31 +2,61 @@ import os
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
+import zipfile
+from io import BytesIO
 
 BASE_URL = "https://www.bcl.lu/en/Regulatory-reporting/Etablissements_credit/AnaCredit/Instructions/index.html"
-OUTPUT_DIR = "downloaded_files"
+OUTPUT_DIR = "database_docs"
 
-# 1) Création du dossier local si nécessaire
+# 1) Créer le dossier output
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# 2) Récupération du HTML de la page
+# 2) Télécharger la page HTML
 response = requests.get(BASE_URL)
 soup = BeautifulSoup(response.text, "html.parser")
 
-# 3) Filtrer tous les liens PDF et ZIP
+# 3) Parcourir tous les liens PDF + ZIP
 for link in soup.find_all("a"):
     href = link.get("href")
-    if href and (href.lower().endswith(".pdf") or href.lower().endswith(".zip")):
-        file_url = urljoin(BASE_URL, href)
 
-        # 4) Préparer chemin local du fichier
-        file_name = os.path.basename(file_url)
-        local_path = os.path.join(OUTPUT_DIR, file_name)
+    if not href:
+        continue
 
-        # 5) Télécharger chaque fichier
-        print(f"Downloading {file_name} ...")
-        file_resp = requests.get(file_url)
-        with open(local_path, "wb") as f:
-            f.write(file_resp.content)
+    file_url = urljoin(BASE_URL, href)
 
-        print(f"✔ Saved {file_name} in {OUTPUT_DIR}")
+    # 📌 PDF direct
+    if href.lower().endswith(".pdf"):
+        file_name = os.path.basename(href)
+        file_path = os.path.join(OUTPUT_DIR, file_name)
+
+        print(f"📥 Téléchargement PDF : {file_name}")
+        pdf_content = requests.get(file_url).content
+
+        with open(file_path, "wb") as f:
+            f.write(pdf_content)
+
+    # 📌 ZIP → extraction à plat (pas de sous-dossiers)
+    elif href.lower().endswith(".zip"):
+        zip_name = os.path.basename(href)
+        print(f"📦 Téléchargement ZIP : {zip_name}")
+
+        zip_content = requests.get(file_url).content
+
+        # Lire le ZIP en mémoire
+        with zipfile.ZipFile(BytesIO(zip_content)) as zipped:
+            for file_inside in zipped.namelist():
+
+                # Ignorer les dossiers internes
+                if file_inside.endswith("/"):
+                    continue
+
+                # Extraire seulement le nom du fichier, pas le chemin
+                clean_name = os.path.basename(file_inside)
+
+                output_path = os.path.join(OUTPUT_DIR, clean_name)
+
+                print(f"➡ Extraction : {clean_name}")
+
+                # EXTRACTION -- bien indentée
+                with zipped.open(file_inside) as source, open(output_path, "wb") as target:
+                    target.write(source.read())
