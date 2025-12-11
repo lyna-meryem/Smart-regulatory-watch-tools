@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_10/BCL_LU_ANCRDT_C_FORMATS" targetNamespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_10/BCL_LU_ANCRDT_C_FORMATS" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:simpleType name="BCL__0TO1_6D">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="6"/>
+            <xs:maxInclusive value="1"/>
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_7D_OR_BC_7D">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{7}|(BC\d{7})"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_8D_HASH_3D">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}(#)\d{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_B_Z_D">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[B-Z]\d+"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_BA_MBS_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{1,2}-\d{3,5}|\d{1}-\d{4}-\d{2}|\d{2}-\d{2}-\d{4}-\d{2}|\d-\d{3}-\d|\d-\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_BR_CNPJ_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_CL_RUT_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}\.\d{3}\.\d{3}-[K0-9]|\d{8}-[K0-9]"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_CY_IF_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(IF)\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_DE_TAX_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[1-9]\d{3}0\d{8}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_DE_TRD_RGSTR_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="((HRA)|(G(n|N)R)|(HRB)|(PR)|(VR)|(G(s|S)R))[1-9]\d{0,5}[A-Z]{0,5}-[A-Z]\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_DK_FT_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[1-9]((\d{2,4})|(\d{4}-\d{3}))"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_FI_Y_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{7}-\d{1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_GB_CRN_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(\d{8})|(([A-EG-Z][A-Z]|F[ABD-Z])\d{6})|([R]\d{7})|(IP\d{5}R)"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_GG_RN_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(\d{1,6})"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_HK_CR_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([A-Z]{2}\d{7})|([A-Z]{1}\d{7})|(\d{7})"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_ID_NPWP_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}\.\d{3}\.\d{3}\.\d{1}-\d{3}\.\d{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_LI_FL_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(FL)-\d{4}\.\d{3}\.\d{3}-\d{1}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_LT_INV_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]\d{3}|(SF)\d{3}|[A-Z]{3}-\d{2}/\d{2}|[A-Z]{3}-[A-Z]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_MH_NBR_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(\d{1,6})"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_RO_TRN_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(J|F|C)\d{2}/\d{1,9}/\d{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_SG_ROB_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="((\d{8,9}[A-Z])|([A-Z]\d{2}[A-Z]{2}\d{4}[A-Z](-SF\d{3})?))"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_SM_COE_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(SM)?\d{1,5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_ID_US_DSFN_CD">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(\d{5,7})"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_RSTRCTD_ID_50">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Za-z0-9_@$\-][!-~]*"/>
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_RSTRCTD_ID_60">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[!-~]|([!-~][ -~]*[!-~])"/>
+            <xs:maxLength value="60"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="BCL_XS_BOOLEAN">
+        <xs:restriction base="xs:boolean"/>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:bclfrmt="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_9/BCL_LU_ANCRDT_C_FORMATS" xmlns:ecbcnstrnt="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_9/ECB_LU_ANCRDT_C_CONSTRAINTS" xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_9/BCL_ANCRDT_T1_REF" xmlns:dsd="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/structurespecific" xmlns:ecbfrmt="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_9/ECB_LU_ANCRDT_C_FORMATS" xmlns:bclcnstrnt="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_9/BCL_LU_ANCRDT_C_CONSTRAINTS" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" targetNamespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_9/BCL_ANCRDT_T1_REF" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:import namespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_9/BCL_LU_ANCRDT_C_FORMATS" schemaLocation="BCL_LU_ANCRDT_C_FORMATS_v1_0_9.xsd"/>
+    <xs:import namespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_9/BCL_LU_ANCRDT_C_CONSTRAINTS" schemaLocation="BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_9.xsd"/>
+    <xs:import namespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_9/ECB_LU_ANCRDT_C_FORMATS" schemaLocation="ECB_LU_ANCRDT_C_FORMATS_v1_0_9.xsd"/>
+    <xs:import namespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_9/ECB_LU_ANCRDT_C_CONSTRAINTS" schemaLocation="ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_9.xsd"/>
+    <xs:import namespace="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" schemaLocation="SDMXCommon.xsd"/>
+    <xs:import namespace="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/structurespecific" schemaLocation="SDMXDataStructureSpecific.xsd"/>
+    <xs:import namespace="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" schemaLocation="SDMXMessage.xsd"/>
+    <xs:complexType name="ObsBCL_ANCRDT_REF_HDR_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Survey header data for counterparty reference data - BCL Collection (observations)</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:ObsType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+                <xs:attribute type="common:IDType" use="prohibited" name="type"/>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_50" use="required" name="RPRTNG_AGNT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Reporting agent identifier (identifier type: RIAD internal identifier)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:END_MNTH_YYYY_MM_DD" use="required" name="DT_RFRNC">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Reference date</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_ANCRDT_SRVY_ID" use="required" fixed="BCL_ANCRDT_T1_REF" name="TYP_RPRTNG">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Type of Reporting</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_SBMSSN_TYP" use="required" name="SBMSSN_TYP">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Submission type</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_XS_BOOLEAN" name="IS_EMRGNCY_CRRCTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Is emergency correction</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="BCL_ANCRDT_REF_HDR_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Survey header data for counterparty reference data - BCL Collection</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:DataSetType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                    <xs:element type="common:DataProviderReferenceType" form="unqualified" minOccurs="0" name="DataProvider"/>
+                    <xs:choice minOccurs="1">
+                        <xs:element type="ObsBCL_ANCRDT_REF_HDR_C" form="unqualified" maxOccurs="unbounded" name="Obs"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ObsBCL_ANCRDT_ENTTY_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Counterparty reference data - BCL Collection (observations)</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:ObsType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+                <xs:attribute type="common:IDType" use="prohibited" name="type"/>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="ENTTY_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Entity ID</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:PTTRN_LEI" name="LEI">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">LEI code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_TYP_ENTTY_NTNL_ID_ANCRDT" name="TYP_ENTTY_NTNL_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Type of entity national identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" name="HD_OFFC_UNDRT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Head office undertaking identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" name="IMMDT_PRNT_UNDRT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Immediate parent undertaking identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" name="ULTMT_PRNT_UNDRT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Ultimate parent undertaking identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:LTN_EXT_255" name="NM_ENTTY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Name</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:LTN_EXT_255" name="STRT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Street</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:LTN_EXT_255" name="CTY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">City</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_NUTS3_ANCRDT_CLLCTN" name="TRRTRL_UNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Territorial unit</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:LTN_EXT_255" name="PSTL_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Postal code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:ISO3166_DSJNT_C_CLLCTN" name="CNTRY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Country of residence</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:ANCRDT_LGL_FRM" name="LGL_FRM">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Legal form</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_INSTTTNL_SCTR_ANCRDT" name="INSTTTNL_SCTR">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Institutional sector</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_NACE_LVLS2TO4" name="ECNMC_ACTVTY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Economic activity</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_LGL_PRCDNG_STTS_ANCRDT" name="LGL_PRCDNG_STTS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Legal proceeding status</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_INTTN_LGL_PRCDNGS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Date of initiation of legal proceedings</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_SZ_ANCRDT" name="ENTRPRS_SZ">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Enterprise size</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_ENTRPRS_SZ">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Date of enterprise size</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:RL_NN_NGTV_2D" name="NMBR_EMPLYS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Number of employees</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="BLNC_SHT_TTL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Balance sheet total</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="ANNL_TRNVR">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Annual turnover</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_ACCNTNG_FRMWRK_ANCRDT" name="ACCNTNG_FRMWRK_SL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Accounting framework for solo reporting</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_ACCNTNG_FRMWRK_SL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_ANNL_TRNVR">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_BLNC_SHT_TTL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_CNTRY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_CTY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_DT_ENTRPRS_SZ">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_DT_INTTN_LGL_PRCDNGS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_ECNMC_ACTVTY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_ENTRPRS_SZ">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_HD_OFFC_UNDRT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_IMMDT_PRNT_UNDRT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_INSTTTNL_SCTR">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_LEI">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_LGL_FRM">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_LGL_PRCDNG_STTS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_NM_ENTTY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_NMBR_EMPLYS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_PSTL_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_STRT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_TRRTRL_UNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_TYP_ENTTY_NTNL_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_ULTMT_PRNT_UNDRT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_50" name="ENTTY_RIAD_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Entity RIAD code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:BLN_TF" name="IS_ENTTY_CD_NTNL_NA">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Is national entity code not applicable</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_50" name="TYP_ENTTY_CD_OTHR">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Type of Other Entity Identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:LTN_EXT_50" name="ENTTY_CD_OTHR">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Other entity code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_6D_L_3D" name="AT_FB_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Firmenbuchnummer (FB-Nr.)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_5" name="AT_GEM_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Gemeindenummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_1_TO_8" name="AT_IDENT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Identnummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_1" name="AT_LAE_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Ländernummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_1_TO_10" name="AT_ZVR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Vereinsregisternummer (ZVR)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_0_9" name="BE_OND_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Numéro d'entreprise / Ondernemingsnummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9_10_13" name="BG_BULSTAT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Единен идентификационен код (по БУЛСТАТ) / Edinen identifikacionen kod (po BULSTAT)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9_13" name="BG_UIC_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Единен (Персонален) идентификационен код (ЕИК) / Edinen (Personalen) identifikacionen kod (EIK)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_BG_9_10" name="BG_VAT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Идентификационен номер по ДДС / Identifikacionen nomer po DDS</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_11D_OR_L" name="BIC">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">BIC</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_ID_2D_3D_3D_4D_2D" name="BR_CNPJ_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Cadastro Nacional da Pessoa Jurídica</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9" name="CA_BN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Business Number / Federal Tax ID</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_CHE_3D_3D_3D" name="CH_UID_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Unternehmens-Identifikationsnummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_18_L_OR_D" name="CN_CC_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Credibility Code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_COP_8D" name="CY_DRCOR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Αριθμός Εγγραφής στο Τμήμα Εφόρου Εταιρειών και Επίσημου Παραλήπτη /  Arithmós Engraphís sto Tmíma Ephórou Etairión kai Epísimou Paralípti</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_S13_8D" name="CY_GG_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Αριθμός μονάδων γενικής κυβέρνησης</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_CYIF_4D" name="CY_IF_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Investment Fund code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_PF_4D" name="CY_PF_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Pension Fund code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8D_1L" name="CY_TIC_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">αριθμός φορολογικής ταυτότητας (T.I.C. code) / Arithmós phoroloyikís taftótitas (T. I. C.  Code)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_D_7D_L" name="CY_VAT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Αριθμός Εγγραφής Φ.Π.Α. /  Arithmós Engraphís Ph. P. A.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8" name="CZ_ICO_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Identifikační číslo osoby (ICO)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8_OR_10" name="CZ_NID_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Náhradní identifikační číslo (NID / KIC)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_DE_TRD_RGSTR_CD" name="DE_TRD_RGSTR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Trade register code - Genossenschaftsregister, Handelsregister Abteilung A, Handelsregister Abteilung B, Partnerschaftsregister, Vereinsregister</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8" name="DK_CVR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">CVR-nummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_VAR_LEN_D_DASH" name="DK_FT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">FT-nummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8" name="DK_SE_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">SE-nummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_1_TO_4" name="EE_FON_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Aruandja kood (fondi kood)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8" name="EE_RG_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Äriregistri kood (rg-kood)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9D_OR_L" name="ES_NIF_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Código de Identificación Fiscal (NIF)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_FI_8D" name="FI_ALV_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Arvonlisäverotunniste (ALV-tunnus)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_ID_8D_HASH_3D" name="FI_SIRA_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Rahastotunnus (SIRA-tunnus)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8D_DASH" name="FI_Y_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Yritys- ja yhteisötunnus / Y-tunnus</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_5" name="FR_CIB">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Code interbancaire (CIB)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_1L_9D" name="FR_RNA_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Association register number - Register number for associations</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9" name="FR_SIREN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">SIREN code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8DL" name="GB_CRN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Company Registration Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_10D_OR_9DK" name="GB_UTR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Unique taxpayer reference</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:STRNG_50" name="GEN_IPF_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Investment/Pension fund identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:STRNG_50" name="GEN_NBR_ENTTY_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Business register number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:STRNG_50" name="GEN_NCB_ENTTY_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">NCB identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:STRNG_50" name="GEN_NSA_ENTTY_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">National supervisory authority code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:STRNG_50" name="GEN_NSI_ENTTY_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">National Statistical Institute number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:STRNG_50" name="GEN_PS_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Public sector entity identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:STRNG_50" name="GEN_TAX_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Tax code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:STRNG_50" name="GEN_TRD_RGSTR_ENTTY_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Trade register number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:STRNG_50" name="GEN_VAT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">VAT number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9" name="GR_AFM_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Arithmós Forologikou Mitroou A-Fi-Mi  Αριθμός Φορολογικού Μητρώου Α.Φ.Μ. (AFM) / Arithmós Forologikou Mitroou A-Fi-Mi (AFM)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_7" name="GR_IMO_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">International Maritime Organisation number (IMO)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8" name="HR_MB_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Matični broj poslovnog subjekta</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_0_OR_1_8D" name="HR_MBS_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Matični broj subjekta trgovačkog suda</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_11" name="HR_OIB_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Osobni identifikacijski broj</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_2D-2D-6D" name="HU_CEG_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Cégjegyzékszám</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_FB5D_OR_FB3D_1L_2D" name="HU_FB_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">FB kód</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_HU_8D" name="HU_KOZ_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Közösségi adószám</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8" name="HU_TOR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Törzsszám</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_1_OR_9_D_1_6" name="IE_CRO_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Company Registration Office number (CRO number)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_21D_OR_L" name="IN_CIN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Corporate identity number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_10D_OR_L" name="IN_PAN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Permanent Account Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_2L_7D" name="IT_CCIAA_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Numero d'iscrizione camerale (CCIAA+REA)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_11" name="IT_CF_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Codice fiscale (CF)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_MAX_7D" name="IT_UCITS_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Codice OICR</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_13D" name="JP_CN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Corporate Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_ID_LT_INV_CD" name="LT_INV_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Investicinio/ pensijų fondo kodas</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9" name="LT_JAR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">JAR kodas</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_1L_6D_C_5D" name="LU_IF_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Investment fund entity identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_ID_B_Z_D" name="LU_RCS_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Numéro registre de commerce et des sociétés (RCS)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8" name="LU_VAT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Public sector entity identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_LV_FON_CD" name="LV_FON_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Ieguldījumu fondu /pensiju fondu kods</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_11" name="LV_NBR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Komersanta reģistrācijas numurs Latvijas Republikas Uzņēmumu reģistra komercreģistrā (NBR)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_LV_11D" name="LV_VAT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Pievienotās vērtības nodokļa (PVN) maksātāja kods</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_5" name="MC_CIB">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Code interbancaire</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_4D_1L_5D" name="MC_NIS_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Business register number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_2D_3L_5D" name="MC_RCI_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Trade register number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:STRNG_50" name="MT_CNUM_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">MFSA Company Number (C-number)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:STRNG_50" name="MT_OLE_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Other Legal Entities code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8" name="MT_VAT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">VAT number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_3L_6D_3D_OR_L" name="MX_RFC_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Clave en el Registro Federal de Contribuyentes</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8" name="NL_KVK_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Kamer van Koophandel nummer (KvK-nummer)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9" name="NL_RSIN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Rechtspersonen Samenwerkingsverbanden Informatie nummer (RSIN)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_VAR_LEN" name="PL_KRS_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Numer w Krajowym Rejestrze Sądowym (KRS)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_10" name="PL_NIP_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Numer Identyfikacji Podatkowej (NIP)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_14_OR_9" name="PL_REGON_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Numer identyfikacyjny REGON</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_PL_10" name="PL_VAT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Numer Identyfikacji Podatkowej NIP z prefixem PL (VAT UE)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_MAX_6D" name="PT_FSA_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Código de Agente Financeiro (BdP)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9" name="PT_NIF_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Número de Identificação de Pessoa Coletiva (NIF/NIPC)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_RO_10D" name="RO_CUI_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Codul unic de identificare fiscală (CUI)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_RO_10D" name="RO_TAX_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Indentificatorul aferent taxei pe valoarea adaugata</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_ID_J_D_D_D" name="RO_TRN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Numarul de inregistrare la registrul comertului</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_10" name="RU_INN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Taxpayer Personal Identification Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_5D" name="SE_FIN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Finansinspektionens institutnummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_SE_12" name="SE_MOM_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Momsregistreringsnummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_6D_4D" name="SE_ORG_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Organisationsnummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8" name="SI_DAV_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Davčna številka</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_SI_8" name="SI_DDV_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">ID za DDV</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_10" name="SI_MAT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Matična številka</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8D_OR_8D_1L" name="SK_ICO_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Identifikačné číslo organizácie (ICO)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_SK_8D_3L_2D" name="SK_IF_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Kód investičného fondu</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_1D_TO_10D" name="TR_VKN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Vergi Kimlik Numarası</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_2D_7D" name="US_EIN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Employer Identification Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_2L_1_TO_8D" name="CY_CBCID_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">CBC internal code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_FR_10L_OR_10D" name="FR_IF_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Investment fund identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_L_7D" name="HK_CR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Corporate Registry Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_GV_4D_OR_LA_3D" name="IE_GOV_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Government bodies identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9" name="NO_NBR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Organization number, Brønnøysund Register&amp;nbsp;</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_GB_VAT_CD" name="GB_VAT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">GB VAT number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_6" name="GB_FSR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Financial Services Register code</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_6D_TO_7D" name="US_DSFN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Delaware State File Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_10" name="US_CIK_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Central Index Key</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_CH_3D_7D_1D" name="CH_ID_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Business register number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_CH_3D_1D_3D_3D_1D" name="CH_NUMMER">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Business register number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_4D_TO_6D" name="MH_NBR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Business register number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_13D" name="RU_OGRN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Основной государственный регистрационный номер</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_13D" name="DE_TAX_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Steuernummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_DE_9D" name="DE_VAT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Umsatzsteuer-Identifikationsnummer</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_IE_1D_TO_9D_OR_L" name="IE_VAT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">VAT number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_1_TO_4" name="PT_ASF_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Código da Autoridade de Supervisão de Seguros e Fundos de Pensões (ASF)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_MAX_8D" name="PT_IF_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Código da Comissão do Mercado de Valores Mobiliários (CMVM)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_4D_TO_5D" name="AE_BL_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Business License (BL) Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_2D_8D_1D" name="AR_CUIT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Argentina Unique Tax Identification Key (CUIT/CUIL)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_2D_3D_3D_3D" name="AU_ABN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Australia Business Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_3D_3D_3D" name="AU_ACN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Australia Company Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_13D" name="BA_JIB_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Jedinstveni identifikacioni broj (JIB)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_1_TO_2_3_TO_5_OR_D_4D_2D_OR_2D_2D_4D_2D" name="BA_MBS_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Matični broj subjekta - MBS</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_12D" name="BA_PIB_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Poreski identifikacioni broj (PIB)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_4D_TO_5D" name="BM_RN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Bermuda Registration Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_5D_TO_7D" name="BS_NBR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Bahamas national business registern number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9" name="BY_NBR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Registration number (Регистрационный номер)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_6" name="BZ_TIN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">TIN (Tax ID Number)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_ID_7D_OR_BC_7D" name="CA_REG_ID_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Registration Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_2D_3D_3D_KORD_OR_8D_KORD" name="CL_RUT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Rol Único Tributario</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9D_1D" name="CO_NIT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Número De Identificación Tributaria (NIT)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_13D" name="EC_RUC_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Número de Registro Unico de Contribuyentes (RUC)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_5" name="GG_RN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Entity Reg Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_2D_3D_3D_1D_3D_3D" name="ID_NPWP_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Nomor Pokok Wajib Pajak (NPWP)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_9" name="IL_TAX_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Israeli Tax Identification Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_6D_1L" name="IM_RN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Isel of Man Registration Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_HCX_6D_2D" name="IM_TAX_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Tax Reference Number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_2L_5D" name="JE_TAX_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Tax reference number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_3D_2D_5D" name="KR_TIN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Business registration number (TIN)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_FL_4D_3D_3D_1D" name="LI_FL_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">FL nummer - Registration number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_6D_DSH_1L" name="MY_CRN_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Company Registration Number Old</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_7" name="NC_NBR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Business register number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:STRNG_50" name="PA_RUC_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Single Taxpayer Registry (Registro Único de Contribuyente RUC)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_11" name="PE_RUC_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Registro Único de Contribuyente (RUC)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8" name="RS_MB_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Matični broj</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_RS_PIB_CD" name="RS_PIB_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Poreski identifikacioni broj PIB</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_SG_ROB_CD" name="SG_ROB_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">UEN – Business (ROB)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_5" name="SM_COE_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Codice operatore economico (C.O.E.)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_13D" name="TH_NBR_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Thailand Business register number</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_8" name="TW_TAX_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">統一編號 (Tax number)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ID_12D" name="UY_RUT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Registro Único Tributario (RUT)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="BCL_ANCRDT_ENTTY_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Counterparty reference data - BCL Collection</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:DataSetType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                    <xs:element type="common:DataProviderReferenceType" form="unqualified" minOccurs="0" name="DataProvider"/>
+                    <xs:choice minOccurs="1">
+                        <xs:element type="ObsBCL_ANCRDT_ENTTY_C" form="unqualified" maxOccurs="unbounded" name="Obs"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+</xs:schema>
