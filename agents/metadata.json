@@ -1,0 +1,4945 @@
+{
+    "directory": "database_docs",
+    "generated_at": "2025-12-11T10:55:17.926417",
+    "total_files": 616,
+    "total_size_bytes": 178343546,
+    "files_by_type": {
+        ".xml": 19,
+        ".pdf": 41,
+        ".html": 56,
+        ".xsd": 56,
+        ".png": 392,
+        ".xlsx": 51,
+        ".db": 1
+    },
+    "files": [
+        {
+            "name": "00_LU_ANCRDT_agencies_v1_0_10.xml",
+            "path": "database_docs\\00_LU_ANCRDT_agencies_v1_0_10.xml",
+            "extension": ".xml",
+            "size_bytes": 1347,
+            "last_modified": "2025-12-11T10:38:53.496547",
+            "language": "unknown"
+        },
+        {
+            "name": "00_LU_ANCRDT_agencies_v1_0_7.xml",
+            "path": "database_docs\\00_LU_ANCRDT_agencies_v1_0_7.xml",
+            "extension": ".xml",
+            "size_bytes": 1342,
+            "last_modified": "2025-12-11T10:39:01.788325",
+            "language": "unknown"
+        },
+        {
+            "name": "00_LU_ANCRDT_agencies_v1_0_8.xml",
+            "path": "database_docs\\00_LU_ANCRDT_agencies_v1_0_8.xml",
+            "extension": ".xml",
+            "size_bytes": 1347,
+            "last_modified": "2025-12-11T10:38:59.954020",
+            "language": "unknown"
+        },
+        {
+            "name": "00_LU_ANCRDT_agencies_v1_0_9.xml",
+            "path": "database_docs\\00_LU_ANCRDT_agencies_v1_0_9.xml",
+            "extension": ".xml",
+            "size_bytes": 1347,
+            "last_modified": "2025-12-11T10:38:55.171816",
+            "language": "unknown"
+        },
+        {
+            "name": "01_LU_ANCRDT_full_v1_0_10.xml",
+            "path": "database_docs\\01_LU_ANCRDT_full_v1_0_10.xml",
+            "extension": ".xml",
+            "size_bytes": 1947421,
+            "last_modified": "2025-12-11T10:38:53.496547",
+            "language": "unknown"
+        },
+        {
+            "name": "01_LU_ANCRDT_full_v1_0_7.xml",
+            "path": "database_docs\\01_LU_ANCRDT_full_v1_0_7.xml",
+            "extension": ".xml",
+            "size_bytes": 1849836,
+            "last_modified": "2025-12-11T10:39:01.806124",
+            "language": "unknown"
+        },
+        {
+            "name": "01_LU_ANCRDT_full_v1_0_8.xml",
+            "path": "database_docs\\01_LU_ANCRDT_full_v1_0_8.xml",
+            "extension": ".xml",
+            "size_bytes": 1915582,
+            "last_modified": "2025-12-11T10:38:59.957829",
+            "language": "unknown"
+        },
+        {
+            "name": "01_LU_ANCRDT_full_v1_0_9.xml",
+            "path": "database_docs\\01_LU_ANCRDT_full_v1_0_9.xml",
+            "extension": ".xml",
+            "size_bytes": 1939535,
+            "last_modified": "2025-12-11T10:38:55.171816",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.10.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.10.pdf",
+            "extension": ".pdf",
+            "size_bytes": 564426,
+            "last_modified": "2025-12-11T10:38:53.328631",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.10_track_changes.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.10_track_changes.pdf",
+            "extension": ".pdf",
+            "size_bytes": 581610,
+            "last_modified": "2025-12-11T10:38:53.338406",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.11.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.11.pdf",
+            "extension": ".pdf",
+            "size_bytes": 564618,
+            "last_modified": "2025-12-11T10:38:51.361187",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.11_track_changes.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.11_track_changes.pdf",
+            "extension": ".pdf",
+            "size_bytes": 580646,
+            "last_modified": "2025-12-11T10:38:51.376395",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.12.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.12.pdf",
+            "extension": ".pdf",
+            "size_bytes": 684837,
+            "last_modified": "2025-12-11T10:38:49.650207",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.12_track_changes.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.12_track_changes.pdf",
+            "extension": ".pdf",
+            "size_bytes": 811331,
+            "last_modified": "2025-12-11T10:38:49.664427",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.13.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.13.pdf",
+            "extension": ".pdf",
+            "size_bytes": 349602,
+            "last_modified": "2025-12-11T10:38:47.598523",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.13_track_changes.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.13_track_changes.pdf",
+            "extension": ".pdf",
+            "size_bytes": 355379,
+            "last_modified": "2025-12-11T10:38:47.601794",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.7.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.7.pdf",
+            "extension": ".pdf",
+            "size_bytes": 564524,
+            "last_modified": "2025-12-11T10:39:01.518289",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.7_track_changes.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.7_track_changes.pdf",
+            "extension": ".pdf",
+            "size_bytes": 580351,
+            "last_modified": "2025-12-11T10:39:01.531067",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.8.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.8.pdf",
+            "extension": ".pdf",
+            "size_bytes": 565230,
+            "last_modified": "2025-12-11T10:38:59.796729",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.8_track_changes.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.8_track_changes.pdf",
+            "extension": ".pdf",
+            "size_bytes": 581232,
+            "last_modified": "2025-12-11T10:38:59.805392",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.9.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.9.pdf",
+            "extension": ".pdf",
+            "size_bytes": 565241,
+            "last_modified": "2025-12-11T10:38:55.019754",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit - Technical specifications - v1.0.9_track_changes.pdf",
+            "path": "database_docs\\AnaCredit - Technical specifications - v1.0.9_track_changes.pdf",
+            "extension": ".pdf",
+            "size_bytes": 581682,
+            "last_modified": "2025-12-11T10:38:55.028140",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_instructions_EN.pdf",
+            "path": "database_docs\\AnaCredit_instructions_EN.pdf",
+            "extension": ".pdf",
+            "size_bytes": 624491,
+            "last_modified": "2025-12-11T10:38:43.222127",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_instructions_EN_Revision_marks.pdf",
+            "path": "database_docs\\AnaCredit_instructions_EN_Revision_marks.pdf",
+            "extension": ".pdf",
+            "size_bytes": 644761,
+            "last_modified": "2025-12-11T10:38:43.431784",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_list_reporting_Member_States_EN.pdf",
+            "path": "database_docs\\AnaCredit_list_reporting_Member_States_EN.pdf",
+            "extension": ".pdf",
+            "size_bytes": 37602,
+            "last_modified": "2025-12-11T10:38:43.490708",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_list_reporting_member_states_EN_Revision_marks.pdf",
+            "path": "database_docs\\AnaCredit_list_reporting_member_states_EN_Revision_marks.pdf",
+            "extension": ".pdf",
+            "size_bytes": 38002,
+            "last_modified": "2025-12-11T10:38:43.571023",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_methodology_comparison_BSI_MIR_2023_12_EN.pdf",
+            "path": "database_docs\\AnaCredit_methodology_comparison_BSI_MIR_2023_12_EN.pdf",
+            "extension": ".pdf",
+            "size_bytes": 1195163,
+            "last_modified": "2025-12-11T10:38:45.871673",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_methodology_comparison_BSI_MIR_2023_12_EN_Rm.pdf",
+            "path": "database_docs\\AnaCredit_methodology_comparison_BSI_MIR_2023_12_EN_Rm.pdf",
+            "extension": ".pdf",
+            "size_bytes": 1498505,
+            "last_modified": "2025-12-11T10:38:46.309785",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_methodology_comparison_report_FINREP_2023_12_EN.pdf",
+            "path": "database_docs\\AnaCredit_methodology_comparison_report_FINREP_2023_12_EN.pdf",
+            "extension": ".pdf",
+            "size_bytes": 861927,
+            "last_modified": "2025-12-11T10:38:44.535667",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_methodology_comparison_report_FINREP_2023_12_EN_RM.pdf",
+            "path": "database_docs\\AnaCredit_methodology_comparison_report_FINREP_2023_12_EN_RM.pdf",
+            "extension": ".pdf",
+            "size_bytes": 886231,
+            "last_modified": "2025-12-11T10:38:44.812405",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_methodology_comparison_report_FINREP_EN.pdf",
+            "path": "database_docs\\AnaCredit_methodology_comparison_report_FINREP_EN.pdf",
+            "extension": ".pdf",
+            "size_bytes": 839149,
+            "last_modified": "2025-12-11T10:38:43.950887",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_methodology_comparison_report_FINREP_EN_Revision_marks.pdf",
+            "path": "database_docs\\AnaCredit_methodology_comparison_report_FINREP_EN_Revision_marks.pdf",
+            "extension": ".pdf",
+            "size_bytes": 839599,
+            "last_modified": "2025-12-11T10:38:44.209929",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_methodology_comparison_report_iBSI_iMIR_EN.pdf",
+            "path": "database_docs\\AnaCredit_methodology_comparison_report_iBSI_iMIR_EN.pdf",
+            "extension": ".pdf",
+            "size_bytes": 1050745,
+            "last_modified": "2025-12-11T10:38:45.151335",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_methodology_comparison_report_iBSI_iMIR_EN_revision_marks.pdf",
+            "path": "database_docs\\AnaCredit_methodology_comparison_report_iBSI_iMIR_EN_revision_marks.pdf",
+            "extension": ".pdf",
+            "size_bytes": 1051388,
+            "last_modified": "2025-12-11T10:38:45.476934",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_methodology_comparison_report_S25L_EN.pdf",
+            "path": "database_docs\\AnaCredit_methodology_comparison_report_S25L_EN.pdf",
+            "extension": ".pdf",
+            "size_bytes": 631967,
+            "last_modified": "2025-12-11T10:38:46.517828",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_10.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_10.pdf",
+            "extension": ".pdf",
+            "size_bytes": 564426,
+            "last_modified": "2025-12-11T10:38:53.752669",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_10_revision_marks.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_10_revision_marks.pdf",
+            "extension": ".pdf",
+            "size_bytes": 581610,
+            "last_modified": "2025-12-11T10:38:53.963135",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_11.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_11.pdf",
+            "extension": ".pdf",
+            "size_bytes": 564618,
+            "last_modified": "2025-12-11T10:38:51.721229",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_11_revision_marks.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_11_revision_marks.pdf",
+            "extension": ".pdf",
+            "size_bytes": 580646,
+            "last_modified": "2025-12-11T10:38:51.921666",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_12.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_12.pdf",
+            "extension": ".pdf",
+            "size_bytes": 684837,
+            "last_modified": "2025-12-11T10:38:50.151839",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_12_track_changes.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_12_track_changes.pdf",
+            "extension": ".pdf",
+            "size_bytes": 811331,
+            "last_modified": "2025-12-11T10:38:50.416456",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_13.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_13.pdf",
+            "extension": ".pdf",
+            "size_bytes": 349602,
+            "last_modified": "2025-12-11T10:38:47.915936",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_13_revision_marks.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_13_revision_marks.pdf",
+            "extension": ".pdf",
+            "size_bytes": 355379,
+            "last_modified": "2025-12-11T10:38:48.046157",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_7.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_7.pdf",
+            "extension": ".pdf",
+            "size_bytes": 564524,
+            "last_modified": "2025-12-11T10:39:02.009230",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_7_Revision_marks.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_7_Revision_marks.pdf",
+            "extension": ".pdf",
+            "size_bytes": 580351,
+            "last_modified": "2025-12-11T10:39:02.247749",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_8_2023_EN.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_8_2023_EN.pdf",
+            "extension": ".pdf",
+            "size_bytes": 565230,
+            "last_modified": "2025-12-11T10:39:00.171561",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_8_2023_EN_Revision_marks.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_8_2023_EN_Revision_marks.pdf",
+            "extension": ".pdf",
+            "size_bytes": 581232,
+            "last_modified": "2025-12-11T10:39:00.383996",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_9.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_9.pdf",
+            "extension": ".pdf",
+            "size_bytes": 565241,
+            "last_modified": "2025-12-11T10:38:55.373366",
+            "language": "unknown"
+        },
+        {
+            "name": "AnaCredit_Technical_specifications_v1_0_9_Revision_marks.pdf",
+            "path": "database_docs\\AnaCredit_Technical_specifications_v1_0_9_Revision_marks.pdf",
+            "extension": ".pdf",
+            "size_bytes": 581682,
+            "last_modified": "2025-12-11T10:38:55.576053",
+            "language": "unknown"
+        },
+        {
+            "name": "ANTREF_202112_LUB05665_20220115-001.xml",
+            "path": "database_docs\\ANTREF_202112_LUB05665_20220115-001.xml",
+            "extension": ".xml",
+            "size_bytes": 3148,
+            "last_modified": "2025-12-11T10:39:01.770503",
+            "language": "unknown"
+        },
+        {
+            "name": "ANTREF_202309_LUB05665_20220115-001.xml",
+            "path": "database_docs\\ANTREF_202309_LUB05665_20220115-001.xml",
+            "extension": ".xml",
+            "size_bytes": 3146,
+            "last_modified": "2025-12-11T10:38:55.160758",
+            "language": "unknown"
+        },
+        {
+            "name": "ANTREF_202503_LUB05665_20250415-001.xml",
+            "path": "database_docs\\ANTREF_202503_LUB05665_20250415-001.xml",
+            "extension": ".xml",
+            "size_bytes": 3149,
+            "last_modified": "2025-12-11T10:38:51.509817",
+            "language": "unknown"
+        },
+        {
+            "name": "ANTREF_202508_LUB05665_BCL001.xml",
+            "path": "database_docs\\ANTREF_202508_LUB05665_BCL001.xml",
+            "extension": ".xml",
+            "size_bytes": 3143,
+            "last_modified": "2025-12-11T10:38:49.795532",
+            "language": "unknown"
+        },
+        {
+            "name": "ANTREF_202601_LUB05665_BCL001.xml",
+            "path": "database_docs\\ANTREF_202601_LUB05665_BCL001.xml",
+            "extension": ".xml",
+            "size_bytes": 2879,
+            "last_modified": "2025-12-11T10:38:47.754148",
+            "language": "unknown"
+        },
+        {
+            "name": "ANTT1M_202112_LUB05665_LUB05665_20220115-001.xml",
+            "path": "database_docs\\ANTT1M_202112_LUB05665_LUB05665_20220115-001.xml",
+            "extension": ".xml",
+            "size_bytes": 3825,
+            "last_modified": "2025-12-11T10:39:01.770503",
+            "language": "unknown"
+        },
+        {
+            "name": "ANTT1M_202309_LUB05665_LUB05665_20220115-001.xml",
+            "path": "database_docs\\ANTT1M_202309_LUB05665_LUB05665_20220115-001.xml",
+            "extension": ".xml",
+            "size_bytes": 3825,
+            "last_modified": "2025-12-11T10:38:55.167101",
+            "language": "unknown"
+        },
+        {
+            "name": "ANTT1M_202503_LUB05665_LUB05665_20250415-001.xml",
+            "path": "database_docs\\ANTT1M_202503_LUB05665_LUB05665_20250415-001.xml",
+            "extension": ".xml",
+            "size_bytes": 3826,
+            "last_modified": "2025-12-11T10:38:51.509817",
+            "language": "unknown"
+        },
+        {
+            "name": "ANTT1M_202508_LUB05665_LUB05665_BCL001.xml",
+            "path": "database_docs\\ANTT1M_202508_LUB05665_LUB05665_BCL001.xml",
+            "extension": ".xml",
+            "size_bytes": 3820,
+            "last_modified": "2025-12-11T10:38:49.795532",
+            "language": "unknown"
+        },
+        {
+            "name": "ANTT1M_202601_LUB05665_LUB05665_BCL001.xml",
+            "path": "database_docs\\ANTT1M_202601_LUB05665_LUB05665_BCL001.xml",
+            "extension": ".xml",
+            "size_bytes": 3940,
+            "last_modified": "2025-12-11T10:38:47.754720",
+            "language": "unknown"
+        },
+        {
+            "name": "ANTT2Q_202603_LUB05665_LUB05665_BCL001.xml",
+            "path": "database_docs\\ANTT2Q_202603_LUB05665_LUB05665_BCL001.xml",
+            "extension": ".xml",
+            "size_bytes": 3006,
+            "last_modified": "2025-12-11T10:38:47.754720",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10.html",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10.html",
+            "extension": ".html",
+            "size_bytes": 1348771,
+            "last_modified": "2025-12-11T10:38:53.373111",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10.xsd",
+            "extension": ".xsd",
+            "size_bytes": 35594,
+            "last_modified": "2025-12-11T10:38:53.488212",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p1.png",
+            "extension": ".png",
+            "size_bytes": 33355,
+            "last_modified": "2025-12-11T10:38:53.373111",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p10.png",
+            "extension": ".png",
+            "size_bytes": 31747,
+            "last_modified": "2025-12-11T10:38:53.378956",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p11.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.379491",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p12.png",
+            "extension": ".png",
+            "size_bytes": 37804,
+            "last_modified": "2025-12-11T10:38:53.381011",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p13.png",
+            "extension": ".png",
+            "size_bytes": 31427,
+            "last_modified": "2025-12-11T10:38:53.382701",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p14.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.383198",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p15.png",
+            "extension": ".png",
+            "size_bytes": 17361,
+            "last_modified": "2025-12-11T10:38:53.384984",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p16.png",
+            "extension": ".png",
+            "size_bytes": 19910,
+            "last_modified": "2025-12-11T10:38:53.385563",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p17.png",
+            "extension": ".png",
+            "size_bytes": 30300,
+            "last_modified": "2025-12-11T10:38:53.387134",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p18.png",
+            "extension": ".png",
+            "size_bytes": 20859,
+            "last_modified": "2025-12-11T10:38:53.387134",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p19.png",
+            "extension": ".png",
+            "size_bytes": 42139,
+            "last_modified": "2025-12-11T10:38:53.389308",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.390436",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p20.png",
+            "extension": ".png",
+            "size_bytes": 19923,
+            "last_modified": "2025-12-11T10:38:53.391062",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p3.png",
+            "extension": ".png",
+            "size_bytes": 16986,
+            "last_modified": "2025-12-11T10:38:53.391982",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p4.png",
+            "extension": ".png",
+            "size_bytes": 30439,
+            "last_modified": "2025-12-11T10:38:53.395012",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.395012",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p6.png",
+            "extension": ".png",
+            "size_bytes": 27244,
+            "last_modified": "2025-12-11T10:38:53.395012",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p7.png",
+            "extension": ".png",
+            "size_bytes": 30523,
+            "last_modified": "2025-12-11T10:38:53.398325",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p8.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.398325",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_10_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_10_p9.png",
+            "extension": ".png",
+            "size_bytes": 18654,
+            "last_modified": "2025-12-11T10:38:53.398325",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11.html",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11.html",
+            "extension": ".html",
+            "size_bytes": 1348771,
+            "last_modified": "2025-12-11T10:38:51.399954",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11.xsd",
+            "extension": ".xsd",
+            "size_bytes": 35594,
+            "last_modified": "2025-12-11T10:38:51.509817",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p1.png",
+            "extension": ".png",
+            "size_bytes": 33360,
+            "last_modified": "2025-12-11T10:38:51.399954",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p10.png",
+            "extension": ".png",
+            "size_bytes": 31752,
+            "last_modified": "2025-12-11T10:38:51.404162",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p11.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.405179",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p12.png",
+            "extension": ".png",
+            "size_bytes": 38034,
+            "last_modified": "2025-12-11T10:38:51.406187",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p13.png",
+            "extension": ".png",
+            "size_bytes": 31571,
+            "last_modified": "2025-12-11T10:38:51.407030",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p14.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.407030",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p15.png",
+            "extension": ".png",
+            "size_bytes": 17349,
+            "last_modified": "2025-12-11T10:38:51.407030",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p16.png",
+            "extension": ".png",
+            "size_bytes": 19575,
+            "last_modified": "2025-12-11T10:38:51.410921",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p17.png",
+            "extension": ".png",
+            "size_bytes": 30267,
+            "last_modified": "2025-12-11T10:38:51.411836",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p18.png",
+            "extension": ".png",
+            "size_bytes": 20881,
+            "last_modified": "2025-12-11T10:38:51.411836",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p19.png",
+            "extension": ".png",
+            "size_bytes": 42112,
+            "last_modified": "2025-12-11T10:38:51.411836",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p2.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.414404",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p20.png",
+            "extension": ".png",
+            "size_bytes": 19960,
+            "last_modified": "2025-12-11T10:38:51.414404",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p3.png",
+            "extension": ".png",
+            "size_bytes": 16687,
+            "last_modified": "2025-12-11T10:38:51.414404",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p4.png",
+            "extension": ".png",
+            "size_bytes": 30446,
+            "last_modified": "2025-12-11T10:38:51.419216",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p5.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.419772",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p6.png",
+            "extension": ".png",
+            "size_bytes": 27192,
+            "last_modified": "2025-12-11T10:38:51.419772",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p7.png",
+            "extension": ".png",
+            "size_bytes": 30531,
+            "last_modified": "2025-12-11T10:38:51.422452",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p8.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.423991",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_11_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_11_p9.png",
+            "extension": ".png",
+            "size_bytes": 18674,
+            "last_modified": "2025-12-11T10:38:51.424710",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12.html",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12.html",
+            "extension": ".html",
+            "size_bytes": 1348771,
+            "last_modified": "2025-12-11T10:38:49.690301",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12.xsd",
+            "extension": ".xsd",
+            "size_bytes": 35594,
+            "last_modified": "2025-12-11T10:38:49.798005",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p1.png",
+            "extension": ".png",
+            "size_bytes": 33360,
+            "last_modified": "2025-12-11T10:38:49.690301",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p10.png",
+            "extension": ".png",
+            "size_bytes": 31752,
+            "last_modified": "2025-12-11T10:38:49.694306",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p11.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.696352",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p12.png",
+            "extension": ".png",
+            "size_bytes": 38034,
+            "last_modified": "2025-12-11T10:38:49.697715",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p13.png",
+            "extension": ".png",
+            "size_bytes": 31571,
+            "last_modified": "2025-12-11T10:38:49.698727",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p14.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.698727",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p15.png",
+            "extension": ".png",
+            "size_bytes": 17349,
+            "last_modified": "2025-12-11T10:38:49.701795",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p16.png",
+            "extension": ".png",
+            "size_bytes": 19575,
+            "last_modified": "2025-12-11T10:38:49.702984",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p17.png",
+            "extension": ".png",
+            "size_bytes": 30267,
+            "last_modified": "2025-12-11T10:38:49.703823",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p18.png",
+            "extension": ".png",
+            "size_bytes": 20881,
+            "last_modified": "2025-12-11T10:38:49.705211",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p19.png",
+            "extension": ".png",
+            "size_bytes": 42112,
+            "last_modified": "2025-12-11T10:38:49.708042",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p2.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.709292",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p20.png",
+            "extension": ".png",
+            "size_bytes": 19960,
+            "last_modified": "2025-12-11T10:38:49.710501",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p3.png",
+            "extension": ".png",
+            "size_bytes": 16687,
+            "last_modified": "2025-12-11T10:38:49.710501",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p4.png",
+            "extension": ".png",
+            "size_bytes": 30446,
+            "last_modified": "2025-12-11T10:38:49.710501",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p5.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.714069",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p6.png",
+            "extension": ".png",
+            "size_bytes": 27192,
+            "last_modified": "2025-12-11T10:38:49.715145",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p7.png",
+            "extension": ".png",
+            "size_bytes": 30531,
+            "last_modified": "2025-12-11T10:38:49.715145",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p8.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.715145",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_12_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_12_p9.png",
+            "extension": ".png",
+            "size_bytes": 18674,
+            "last_modified": "2025-12-11T10:38:49.718815",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13.html",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13.html",
+            "extension": ".html",
+            "size_bytes": 1350789,
+            "last_modified": "2025-12-11T10:38:47.619312",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13.xsd",
+            "extension": ".xsd",
+            "size_bytes": 35594,
+            "last_modified": "2025-12-11T10:38:47.754720",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p1.png",
+            "extension": ".png",
+            "size_bytes": 33360,
+            "last_modified": "2025-12-11T10:38:47.619312",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p10.png",
+            "extension": ".png",
+            "size_bytes": 31752,
+            "last_modified": "2025-12-11T10:38:47.619312",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p11.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.619312",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p12.png",
+            "extension": ".png",
+            "size_bytes": 38034,
+            "last_modified": "2025-12-11T10:38:47.624290",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p13.png",
+            "extension": ".png",
+            "size_bytes": 31571,
+            "last_modified": "2025-12-11T10:38:47.626019",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p14.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.626019",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p15.png",
+            "extension": ".png",
+            "size_bytes": 17349,
+            "last_modified": "2025-12-11T10:38:47.627475",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p16.png",
+            "extension": ".png",
+            "size_bytes": 19575,
+            "last_modified": "2025-12-11T10:38:47.629525",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p17.png",
+            "extension": ".png",
+            "size_bytes": 30267,
+            "last_modified": "2025-12-11T10:38:47.631536",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p18.png",
+            "extension": ".png",
+            "size_bytes": 20881,
+            "last_modified": "2025-12-11T10:38:47.632043",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p19.png",
+            "extension": ".png",
+            "size_bytes": 42112,
+            "last_modified": "2025-12-11T10:38:47.633412",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p2.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.634306",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p20.png",
+            "extension": ".png",
+            "size_bytes": 19960,
+            "last_modified": "2025-12-11T10:38:47.635302",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p3.png",
+            "extension": ".png",
+            "size_bytes": 16687,
+            "last_modified": "2025-12-11T10:38:47.635834",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p4.png",
+            "extension": ".png",
+            "size_bytes": 30446,
+            "last_modified": "2025-12-11T10:38:47.635834",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p5.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.637370",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p6.png",
+            "extension": ".png",
+            "size_bytes": 27192,
+            "last_modified": "2025-12-11T10:38:47.639313",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p7.png",
+            "extension": ".png",
+            "size_bytes": 30531,
+            "last_modified": "2025-12-11T10:38:47.641221",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p8.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.642253",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_13_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_13_p9.png",
+            "extension": ".png",
+            "size_bytes": 18674,
+            "last_modified": "2025-12-11T10:38:47.642253",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7.html",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7.html",
+            "extension": ".html",
+            "size_bytes": 1348716,
+            "last_modified": "2025-12-11T10:39:01.550083",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7.xsd",
+            "extension": ".xsd",
+            "size_bytes": 35580,
+            "last_modified": "2025-12-11T10:39:01.774534",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p1.png",
+            "extension": ".png",
+            "size_bytes": 33355,
+            "last_modified": "2025-12-11T10:39:01.550083",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p10.png",
+            "extension": ".png",
+            "size_bytes": 31747,
+            "last_modified": "2025-12-11T10:39:01.550083",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p11.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.550083",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p12.png",
+            "extension": ".png",
+            "size_bytes": 37804,
+            "last_modified": "2025-12-11T10:39:01.563909",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p13.png",
+            "extension": ".png",
+            "size_bytes": 31427,
+            "last_modified": "2025-12-11T10:39:01.563909",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p14.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.563909",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p15.png",
+            "extension": ".png",
+            "size_bytes": 17361,
+            "last_modified": "2025-12-11T10:39:01.563909",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p16.png",
+            "extension": ".png",
+            "size_bytes": 19910,
+            "last_modified": "2025-12-11T10:39:01.571374",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p17.png",
+            "extension": ".png",
+            "size_bytes": 30300,
+            "last_modified": "2025-12-11T10:39:01.574501",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p18.png",
+            "extension": ".png",
+            "size_bytes": 20859,
+            "last_modified": "2025-12-11T10:39:01.576647",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p19.png",
+            "extension": ".png",
+            "size_bytes": 42139,
+            "last_modified": "2025-12-11T10:39:01.576647",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.579557",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p20.png",
+            "extension": ".png",
+            "size_bytes": 19923,
+            "last_modified": "2025-12-11T10:39:01.579557",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p3.png",
+            "extension": ".png",
+            "size_bytes": 16986,
+            "last_modified": "2025-12-11T10:39:01.583591",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p4.png",
+            "extension": ".png",
+            "size_bytes": 30439,
+            "last_modified": "2025-12-11T10:39:01.583591",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.583591",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p6.png",
+            "extension": ".png",
+            "size_bytes": 27244,
+            "last_modified": "2025-12-11T10:39:01.583591",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p7.png",
+            "extension": ".png",
+            "size_bytes": 30523,
+            "last_modified": "2025-12-11T10:39:01.593404",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p8.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.593404",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_7_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_7_p9.png",
+            "extension": ".png",
+            "size_bytes": 18654,
+            "last_modified": "2025-12-11T10:39:01.595422",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8.html",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8.html",
+            "extension": ".html",
+            "size_bytes": 1348716,
+            "last_modified": "2025-12-11T10:38:59.831084",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8.xsd",
+            "extension": ".xsd",
+            "size_bytes": 35580,
+            "last_modified": "2025-12-11T10:38:59.942961",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p1.png",
+            "extension": ".png",
+            "size_bytes": 33355,
+            "last_modified": "2025-12-11T10:38:59.833142",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p10.png",
+            "extension": ".png",
+            "size_bytes": 31747,
+            "last_modified": "2025-12-11T10:38:59.834065",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p11.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.835009",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p12.png",
+            "extension": ".png",
+            "size_bytes": 37804,
+            "last_modified": "2025-12-11T10:38:59.836000",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p13.png",
+            "extension": ".png",
+            "size_bytes": 31427,
+            "last_modified": "2025-12-11T10:38:59.837052",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p14.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.837052",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p15.png",
+            "extension": ".png",
+            "size_bytes": 17361,
+            "last_modified": "2025-12-11T10:38:59.839514",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p16.png",
+            "extension": ".png",
+            "size_bytes": 19910,
+            "last_modified": "2025-12-11T10:38:59.840882",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p17.png",
+            "extension": ".png",
+            "size_bytes": 30300,
+            "last_modified": "2025-12-11T10:38:59.842743",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p18.png",
+            "extension": ".png",
+            "size_bytes": 20859,
+            "last_modified": "2025-12-11T10:38:59.842743",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p19.png",
+            "extension": ".png",
+            "size_bytes": 42139,
+            "last_modified": "2025-12-11T10:38:59.842743",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.842743",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p20.png",
+            "extension": ".png",
+            "size_bytes": 19923,
+            "last_modified": "2025-12-11T10:38:59.845799",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p3.png",
+            "extension": ".png",
+            "size_bytes": 16986,
+            "last_modified": "2025-12-11T10:38:59.847874",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p4.png",
+            "extension": ".png",
+            "size_bytes": 30439,
+            "last_modified": "2025-12-11T10:38:59.851349",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.852032",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p6.png",
+            "extension": ".png",
+            "size_bytes": 27244,
+            "last_modified": "2025-12-11T10:38:59.853042",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p7.png",
+            "extension": ".png",
+            "size_bytes": 30523,
+            "last_modified": "2025-12-11T10:38:59.853561",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p8.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.853561",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_8_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_8_p9.png",
+            "extension": ".png",
+            "size_bytes": 18654,
+            "last_modified": "2025-12-11T10:38:59.855713",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9.html",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9.html",
+            "extension": ".html",
+            "size_bytes": 1348716,
+            "last_modified": "2025-12-11T10:38:55.061529",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9.xsd",
+            "extension": ".xsd",
+            "size_bytes": 35580,
+            "last_modified": "2025-12-11T10:38:55.167448",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p1.png",
+            "extension": ".png",
+            "size_bytes": 33355,
+            "last_modified": "2025-12-11T10:38:55.061529",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p10.png",
+            "extension": ".png",
+            "size_bytes": 31747,
+            "last_modified": "2025-12-11T10:38:55.061529",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p11.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.071268",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p12.png",
+            "extension": ".png",
+            "size_bytes": 37804,
+            "last_modified": "2025-12-11T10:38:55.072490",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p13.png",
+            "extension": ".png",
+            "size_bytes": 31427,
+            "last_modified": "2025-12-11T10:38:55.072490",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p14.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.072490",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p15.png",
+            "extension": ".png",
+            "size_bytes": 17361,
+            "last_modified": "2025-12-11T10:38:55.072490",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p16.png",
+            "extension": ".png",
+            "size_bytes": 19910,
+            "last_modified": "2025-12-11T10:38:55.072490",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p17.png",
+            "extension": ".png",
+            "size_bytes": 30300,
+            "last_modified": "2025-12-11T10:38:55.072490",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p18.png",
+            "extension": ".png",
+            "size_bytes": 20859,
+            "last_modified": "2025-12-11T10:38:55.082359",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p19.png",
+            "extension": ".png",
+            "size_bytes": 42139,
+            "last_modified": "2025-12-11T10:38:55.083447",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.083447",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p20.png",
+            "extension": ".png",
+            "size_bytes": 19923,
+            "last_modified": "2025-12-11T10:38:55.083447",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p3.png",
+            "extension": ".png",
+            "size_bytes": 16986,
+            "last_modified": "2025-12-11T10:38:55.083447",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p4.png",
+            "extension": ".png",
+            "size_bytes": 30439,
+            "last_modified": "2025-12-11T10:38:55.083447",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.083447",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p6.png",
+            "extension": ".png",
+            "size_bytes": 27244,
+            "last_modified": "2025-12-11T10:38:55.083447",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p7.png",
+            "extension": ".png",
+            "size_bytes": 30523,
+            "last_modified": "2025-12-11T10:38:55.094688",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p8.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.094688",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1M_v1_0_9_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T1M_v1_0_9_p9.png",
+            "extension": ".png",
+            "size_bytes": 18654,
+            "last_modified": "2025-12-11T10:38:55.094688",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_10.html",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_10.html",
+            "extension": ".html",
+            "size_bytes": 4530259,
+            "last_modified": "2025-12-11T10:38:53.405460",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_10.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_10.xsd",
+            "extension": ".xsd",
+            "size_bytes": 65345,
+            "last_modified": "2025-12-11T10:38:53.488212",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_10_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_10_p1.png",
+            "extension": ".png",
+            "size_bytes": 30533,
+            "last_modified": "2025-12-11T10:38:53.409690",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_10_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_10_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.410798",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_10_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_10_p3.png",
+            "extension": ".png",
+            "size_bytes": 139789,
+            "last_modified": "2025-12-11T10:38:53.411150",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_10_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_10_p4.png",
+            "extension": ".png",
+            "size_bytes": 30741,
+            "last_modified": "2025-12-11T10:38:53.411150",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_10_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_10_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.415212",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_10_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_10_p6.png",
+            "extension": ".png",
+            "size_bytes": 18141,
+            "last_modified": "2025-12-11T10:38:53.416209",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_10_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_10_p7.png",
+            "extension": ".png",
+            "size_bytes": 149412,
+            "last_modified": "2025-12-11T10:38:53.417796",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_10_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_10_p8.png",
+            "extension": ".png",
+            "size_bytes": 20857,
+            "last_modified": "2025-12-11T10:38:53.417796",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_11.html",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_11.html",
+            "extension": ".html",
+            "size_bytes": 4692294,
+            "last_modified": "2025-12-11T10:38:51.430313",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_11.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_11.xsd",
+            "extension": ".xsd",
+            "size_bytes": 73541,
+            "last_modified": "2025-12-11T10:38:51.509817",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_11_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_11_p1.png",
+            "extension": ".png",
+            "size_bytes": 30540,
+            "last_modified": "2025-12-11T10:38:51.430313",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_11_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_11_p2.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.437850",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_11_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_11_p3.png",
+            "extension": ".png",
+            "size_bytes": 158050,
+            "last_modified": "2025-12-11T10:38:51.439075",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_11_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_11_p4.png",
+            "extension": ".png",
+            "size_bytes": 30757,
+            "last_modified": "2025-12-11T10:38:51.441637",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_11_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_11_p5.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.443257",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_11_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_11_p6.png",
+            "extension": ".png",
+            "size_bytes": 18137,
+            "last_modified": "2025-12-11T10:38:51.445142",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_11_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_11_p7.png",
+            "extension": ".png",
+            "size_bytes": 168083,
+            "last_modified": "2025-12-11T10:38:51.448598",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_11_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_11_p8.png",
+            "extension": ".png",
+            "size_bytes": 20860,
+            "last_modified": "2025-12-11T10:38:51.449584",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_12.html",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_12.html",
+            "extension": ".html",
+            "size_bytes": 4712084,
+            "last_modified": "2025-12-11T10:38:49.723012",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_12.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_12.xsd",
+            "extension": ".xsd",
+            "size_bytes": 74115,
+            "last_modified": "2025-12-11T10:38:49.798591",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_12_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_12_p1.png",
+            "extension": ".png",
+            "size_bytes": 30540,
+            "last_modified": "2025-12-11T10:38:49.728894",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_12_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_12_p2.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.728894",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_12_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_12_p3.png",
+            "extension": ".png",
+            "size_bytes": 159271,
+            "last_modified": "2025-12-11T10:38:49.728894",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_12_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_12_p4.png",
+            "extension": ".png",
+            "size_bytes": 30757,
+            "last_modified": "2025-12-11T10:38:49.728894",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_12_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_12_p5.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.728894",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_12_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_12_p6.png",
+            "extension": ".png",
+            "size_bytes": 18137,
+            "last_modified": "2025-12-11T10:38:49.735773",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_12_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_12_p7.png",
+            "extension": ".png",
+            "size_bytes": 169338,
+            "last_modified": "2025-12-11T10:38:49.736802",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_12_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_12_p8.png",
+            "extension": ".png",
+            "size_bytes": 20860,
+            "last_modified": "2025-12-11T10:38:49.736802",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_13.html",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_13.html",
+            "extension": ".html",
+            "size_bytes": 4749338,
+            "last_modified": "2025-12-11T10:38:47.651566",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_13.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_13.xsd",
+            "extension": ".xsd",
+            "size_bytes": 74107,
+            "last_modified": "2025-12-11T10:38:47.757698",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_13_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_13_p1.png",
+            "extension": ".png",
+            "size_bytes": 30540,
+            "last_modified": "2025-12-11T10:38:47.653577",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_13_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_13_p2.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.653577",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_13_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_13_p3.png",
+            "extension": ".png",
+            "size_bytes": 159415,
+            "last_modified": "2025-12-11T10:38:47.653577",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_13_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_13_p4.png",
+            "extension": ".png",
+            "size_bytes": 30757,
+            "last_modified": "2025-12-11T10:38:47.653577",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_13_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_13_p5.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.658726",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_13_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_13_p6.png",
+            "extension": ".png",
+            "size_bytes": 18137,
+            "last_modified": "2025-12-11T10:38:47.659315",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_13_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_13_p7.png",
+            "extension": ".png",
+            "size_bytes": 169576,
+            "last_modified": "2025-12-11T10:38:47.661758",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_13_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_13_p8.png",
+            "extension": ".png",
+            "size_bytes": 20860,
+            "last_modified": "2025-12-11T10:38:47.661758",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_7.html",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_7.html",
+            "extension": ".html",
+            "size_bytes": 4115205,
+            "last_modified": "2025-12-11T10:39:01.617964",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_7.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_7.xsd",
+            "extension": ".xsd",
+            "size_bytes": 54951,
+            "last_modified": "2025-12-11T10:39:01.776964",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_7_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_7_p1.png",
+            "extension": ".png",
+            "size_bytes": 30533,
+            "last_modified": "2025-12-11T10:39:01.617964",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_7_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_7_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.617964",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_7_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_7_p3.png",
+            "extension": ".png",
+            "size_bytes": 116806,
+            "last_modified": "2025-12-11T10:39:01.629111",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_7_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_7_p4.png",
+            "extension": ".png",
+            "size_bytes": 30741,
+            "last_modified": "2025-12-11T10:39:01.629111",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_7_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_7_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.629111",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_7_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_7_p6.png",
+            "extension": ".png",
+            "size_bytes": 18141,
+            "last_modified": "2025-12-11T10:39:01.629111",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_7_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_7_p7.png",
+            "extension": ".png",
+            "size_bytes": 125232,
+            "last_modified": "2025-12-11T10:39:01.629111",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_7_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_7_p8.png",
+            "extension": ".png",
+            "size_bytes": 20857,
+            "last_modified": "2025-12-11T10:39:01.639671",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_8.html",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_8.html",
+            "extension": ".html",
+            "size_bytes": 4422181,
+            "last_modified": "2025-12-11T10:38:59.862041",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_8.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_8.xsd",
+            "extension": ".xsd",
+            "size_bytes": 64711,
+            "last_modified": "2025-12-11T10:38:59.944853",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_8_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_8_p1.png",
+            "extension": ".png",
+            "size_bytes": 30533,
+            "last_modified": "2025-12-11T10:38:59.869126",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_8_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_8_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.869126",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_8_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_8_p3.png",
+            "extension": ".png",
+            "size_bytes": 138519,
+            "last_modified": "2025-12-11T10:38:59.872907",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_8_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_8_p4.png",
+            "extension": ".png",
+            "size_bytes": 30741,
+            "last_modified": "2025-12-11T10:38:59.874561",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_8_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_8_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.874561",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_8_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_8_p6.png",
+            "extension": ".png",
+            "size_bytes": 18141,
+            "last_modified": "2025-12-11T10:38:59.874561",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_8_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_8_p7.png",
+            "extension": ".png",
+            "size_bytes": 147964,
+            "last_modified": "2025-12-11T10:38:59.877287",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_8_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_8_p8.png",
+            "extension": ".png",
+            "size_bytes": 20857,
+            "last_modified": "2025-12-11T10:38:59.877287",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_9.html",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_9.html",
+            "extension": ".html",
+            "size_bytes": 4506320,
+            "last_modified": "2025-12-11T10:38:55.042164",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_9.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_9.xsd",
+            "extension": ".xsd",
+            "size_bytes": 64716,
+            "last_modified": "2025-12-11T10:38:55.167448",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_9_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_9_p1.png",
+            "extension": ".png",
+            "size_bytes": 30533,
+            "last_modified": "2025-12-11T10:38:55.049979",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_9_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_9_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.049979",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_9_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_9_p3.png",
+            "extension": ".png",
+            "size_bytes": 138519,
+            "last_modified": "2025-12-11T10:38:55.049979",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_9_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_9_p4.png",
+            "extension": ".png",
+            "size_bytes": 30741,
+            "last_modified": "2025-12-11T10:38:55.049979",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_9_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_9_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.049979",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_9_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_9_p6.png",
+            "extension": ".png",
+            "size_bytes": 18141,
+            "last_modified": "2025-12-11T10:38:55.058851",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_9_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_9_p7.png",
+            "extension": ".png",
+            "size_bytes": 147964,
+            "last_modified": "2025-12-11T10:38:55.061529",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T1_REF_v1_0_9_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T1_REF_v1_0_9_p8.png",
+            "extension": ".png",
+            "size_bytes": 20857,
+            "last_modified": "2025-12-11T10:38:55.061529",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10.html",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10.html",
+            "extension": ".html",
+            "size_bytes": 1813483,
+            "last_modified": "2025-12-11T10:38:53.417796",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10.xsd",
+            "extension": ".xsd",
+            "size_bytes": 23892,
+            "last_modified": "2025-12-11T10:38:53.488212",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p1.png",
+            "extension": ".png",
+            "size_bytes": 31906,
+            "last_modified": "2025-12-11T10:38:53.425125",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p10.png",
+            "extension": ".png",
+            "size_bytes": 33322,
+            "last_modified": "2025-12-11T10:38:53.425824",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p11.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.433329",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p12.png",
+            "extension": ".png",
+            "size_bytes": 20282,
+            "last_modified": "2025-12-11T10:38:53.435036",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p13.png",
+            "extension": ".png",
+            "size_bytes": 32085,
+            "last_modified": "2025-12-11T10:38:53.435036",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p14.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.435036",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p15.png",
+            "extension": ".png",
+            "size_bytes": 26020,
+            "last_modified": "2025-12-11T10:38:53.438359",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p16.png",
+            "extension": ".png",
+            "size_bytes": 19568,
+            "last_modified": "2025-12-11T10:38:53.440558",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p17.png",
+            "extension": ".png",
+            "size_bytes": 18841,
+            "last_modified": "2025-12-11T10:38:53.440558",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p18.png",
+            "extension": ".png",
+            "size_bytes": 20859,
+            "last_modified": "2025-12-11T10:38:53.442396",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p19.png",
+            "extension": ".png",
+            "size_bytes": 22363,
+            "last_modified": "2025-12-11T10:38:53.443032",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.443032",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p20.png",
+            "extension": ".png",
+            "size_bytes": 29887,
+            "last_modified": "2025-12-11T10:38:53.443032",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p3.png",
+            "extension": ".png",
+            "size_bytes": 16863,
+            "last_modified": "2025-12-11T10:38:53.446343",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p4.png",
+            "extension": ".png",
+            "size_bytes": 31907,
+            "last_modified": "2025-12-11T10:38:53.447007",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.447007",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p6.png",
+            "extension": ".png",
+            "size_bytes": 16252,
+            "last_modified": "2025-12-11T10:38:53.449472",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p7.png",
+            "extension": ".png",
+            "size_bytes": 30523,
+            "last_modified": "2025-12-11T10:38:53.451101",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p8.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.451101",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_10_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_10_p9.png",
+            "extension": ".png",
+            "size_bytes": 18654,
+            "last_modified": "2025-12-11T10:38:53.453488",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11.html",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11.html",
+            "extension": ".html",
+            "size_bytes": 1711635,
+            "last_modified": "2025-12-11T10:38:51.455055",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11.xsd",
+            "extension": ".xsd",
+            "size_bytes": 23888,
+            "last_modified": "2025-12-11T10:38:51.509817",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p1.png",
+            "extension": ".png",
+            "size_bytes": 31908,
+            "last_modified": "2025-12-11T10:38:51.455055",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p10.png",
+            "extension": ".png",
+            "size_bytes": 33325,
+            "last_modified": "2025-12-11T10:38:51.457997",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p11.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.459107",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p12.png",
+            "extension": ".png",
+            "size_bytes": 19327,
+            "last_modified": "2025-12-11T10:38:51.460370",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p13.png",
+            "extension": ".png",
+            "size_bytes": 32092,
+            "last_modified": "2025-12-11T10:38:51.462144",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p14.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.463011",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p15.png",
+            "extension": ".png",
+            "size_bytes": 26238,
+            "last_modified": "2025-12-11T10:38:51.463568",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p16.png",
+            "extension": ".png",
+            "size_bytes": 19600,
+            "last_modified": "2025-12-11T10:38:51.463568",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p17.png",
+            "extension": ".png",
+            "size_bytes": 18812,
+            "last_modified": "2025-12-11T10:38:51.463568",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p18.png",
+            "extension": ".png",
+            "size_bytes": 20881,
+            "last_modified": "2025-12-11T10:38:51.463568",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p19.png",
+            "extension": ".png",
+            "size_bytes": 22392,
+            "last_modified": "2025-12-11T10:38:51.468652",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p2.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.469652",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p20.png",
+            "extension": ".png",
+            "size_bytes": 30860,
+            "last_modified": "2025-12-11T10:38:51.469652",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p3.png",
+            "extension": ".png",
+            "size_bytes": 16816,
+            "last_modified": "2025-12-11T10:38:51.469652",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p4.png",
+            "extension": ".png",
+            "size_bytes": 31917,
+            "last_modified": "2025-12-11T10:38:51.473333",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p5.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.474560",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p6.png",
+            "extension": ".png",
+            "size_bytes": 16241,
+            "last_modified": "2025-12-11T10:38:51.475406",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p7.png",
+            "extension": ".png",
+            "size_bytes": 30531,
+            "last_modified": "2025-12-11T10:38:51.477157",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p8.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.477664",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_11_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_11_p9.png",
+            "extension": ".png",
+            "size_bytes": 18674,
+            "last_modified": "2025-12-11T10:38:51.477664",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12.html",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12.html",
+            "extension": ".html",
+            "size_bytes": 1710963,
+            "last_modified": "2025-12-11T10:38:49.743482",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12.xsd",
+            "extension": ".xsd",
+            "size_bytes": 23888,
+            "last_modified": "2025-12-11T10:38:49.798591",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p1.png",
+            "extension": ".png",
+            "size_bytes": 31908,
+            "last_modified": "2025-12-11T10:38:49.743482",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p10.png",
+            "extension": ".png",
+            "size_bytes": 33325,
+            "last_modified": "2025-12-11T10:38:49.743482",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p11.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.743482",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p12.png",
+            "extension": ".png",
+            "size_bytes": 19327,
+            "last_modified": "2025-12-11T10:38:49.743482",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p13.png",
+            "extension": ".png",
+            "size_bytes": 32092,
+            "last_modified": "2025-12-11T10:38:49.743482",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p14.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.743482",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p15.png",
+            "extension": ".png",
+            "size_bytes": 26238,
+            "last_modified": "2025-12-11T10:38:49.750238",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p16.png",
+            "extension": ".png",
+            "size_bytes": 19600,
+            "last_modified": "2025-12-11T10:38:49.751806",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p17.png",
+            "extension": ".png",
+            "size_bytes": 18812,
+            "last_modified": "2025-12-11T10:38:49.751806",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p18.png",
+            "extension": ".png",
+            "size_bytes": 20881,
+            "last_modified": "2025-12-11T10:38:49.751806",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p19.png",
+            "extension": ".png",
+            "size_bytes": 22392,
+            "last_modified": "2025-12-11T10:38:49.751806",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p2.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.751806",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p20.png",
+            "extension": ".png",
+            "size_bytes": 30860,
+            "last_modified": "2025-12-11T10:38:49.756405",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p3.png",
+            "extension": ".png",
+            "size_bytes": 16816,
+            "last_modified": "2025-12-11T10:38:49.756405",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p4.png",
+            "extension": ".png",
+            "size_bytes": 31917,
+            "last_modified": "2025-12-11T10:38:49.756405",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p5.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.756405",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p6.png",
+            "extension": ".png",
+            "size_bytes": 16241,
+            "last_modified": "2025-12-11T10:38:49.756405",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p7.png",
+            "extension": ".png",
+            "size_bytes": 30531,
+            "last_modified": "2025-12-11T10:38:49.760880",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p8.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.762808",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_12_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_12_p9.png",
+            "extension": ".png",
+            "size_bytes": 18674,
+            "last_modified": "2025-12-11T10:38:49.762808",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13.html",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13.html",
+            "extension": ".html",
+            "size_bytes": 1710963,
+            "last_modified": "2025-12-11T10:38:47.665133",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13.xsd",
+            "extension": ".xsd",
+            "size_bytes": 23888,
+            "last_modified": "2025-12-11T10:38:47.759816",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p1.png",
+            "extension": ".png",
+            "size_bytes": 31908,
+            "last_modified": "2025-12-11T10:38:47.669043",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p10.png",
+            "extension": ".png",
+            "size_bytes": 33325,
+            "last_modified": "2025-12-11T10:38:47.670049",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p11.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.670049",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p12.png",
+            "extension": ".png",
+            "size_bytes": 19327,
+            "last_modified": "2025-12-11T10:38:47.671556",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p13.png",
+            "extension": ".png",
+            "size_bytes": 32092,
+            "last_modified": "2025-12-11T10:38:47.672702",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p14.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.674077",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p15.png",
+            "extension": ".png",
+            "size_bytes": 26238,
+            "last_modified": "2025-12-11T10:38:47.674077",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p16.png",
+            "extension": ".png",
+            "size_bytes": 19600,
+            "last_modified": "2025-12-11T10:38:47.674077",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p17.png",
+            "extension": ".png",
+            "size_bytes": 18812,
+            "last_modified": "2025-12-11T10:38:47.676379",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p18.png",
+            "extension": ".png",
+            "size_bytes": 20881,
+            "last_modified": "2025-12-11T10:38:47.676379",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p19.png",
+            "extension": ".png",
+            "size_bytes": 22392,
+            "last_modified": "2025-12-11T10:38:47.678504",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p2.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.679020",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p20.png",
+            "extension": ".png",
+            "size_bytes": 30860,
+            "last_modified": "2025-12-11T10:38:47.680465",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p3.png",
+            "extension": ".png",
+            "size_bytes": 16816,
+            "last_modified": "2025-12-11T10:38:47.680465",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p4.png",
+            "extension": ".png",
+            "size_bytes": 31917,
+            "last_modified": "2025-12-11T10:38:47.682950",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p5.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.684961",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p6.png",
+            "extension": ".png",
+            "size_bytes": 16241,
+            "last_modified": "2025-12-11T10:38:47.687549",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p7.png",
+            "extension": ".png",
+            "size_bytes": 30531,
+            "last_modified": "2025-12-11T10:38:47.687549",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p8.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.689831",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_13_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_13_p9.png",
+            "extension": ".png",
+            "size_bytes": 18674,
+            "last_modified": "2025-12-11T10:38:47.689831",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7.html",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7.html",
+            "extension": ".html",
+            "size_bytes": 1813428,
+            "last_modified": "2025-12-11T10:39:01.643009",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7.xsd",
+            "extension": ".xsd",
+            "size_bytes": 23878,
+            "last_modified": "2025-12-11T10:39:01.776964",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p1.png",
+            "extension": ".png",
+            "size_bytes": 31906,
+            "last_modified": "2025-12-11T10:39:01.652524",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p10.png",
+            "extension": ".png",
+            "size_bytes": 33322,
+            "last_modified": "2025-12-11T10:39:01.652524",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p11.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.655529",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p12.png",
+            "extension": ".png",
+            "size_bytes": 20282,
+            "last_modified": "2025-12-11T10:39:01.655529",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p13.png",
+            "extension": ".png",
+            "size_bytes": 32085,
+            "last_modified": "2025-12-11T10:39:01.661127",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p14.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.661127",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p15.png",
+            "extension": ".png",
+            "size_bytes": 26020,
+            "last_modified": "2025-12-11T10:39:01.661127",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p16.png",
+            "extension": ".png",
+            "size_bytes": 19568,
+            "last_modified": "2025-12-11T10:39:01.661127",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p17.png",
+            "extension": ".png",
+            "size_bytes": 18841,
+            "last_modified": "2025-12-11T10:39:01.661127",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p18.png",
+            "extension": ".png",
+            "size_bytes": 20859,
+            "last_modified": "2025-12-11T10:39:01.661127",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p19.png",
+            "extension": ".png",
+            "size_bytes": 22363,
+            "last_modified": "2025-12-11T10:39:01.675118",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.675118",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p20.png",
+            "extension": ".png",
+            "size_bytes": 29887,
+            "last_modified": "2025-12-11T10:39:01.675118",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p3.png",
+            "extension": ".png",
+            "size_bytes": 16863,
+            "last_modified": "2025-12-11T10:39:01.675118",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p4.png",
+            "extension": ".png",
+            "size_bytes": 31907,
+            "last_modified": "2025-12-11T10:39:01.675118",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.684155",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p6.png",
+            "extension": ".png",
+            "size_bytes": 16252,
+            "last_modified": "2025-12-11T10:39:01.684155",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p7.png",
+            "extension": ".png",
+            "size_bytes": 30523,
+            "last_modified": "2025-12-11T10:39:01.684155",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p8.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.691180",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_7_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_7_p9.png",
+            "extension": ".png",
+            "size_bytes": 18654,
+            "last_modified": "2025-12-11T10:39:01.691180",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8.html",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8.html",
+            "extension": ".html",
+            "size_bytes": 1813428,
+            "last_modified": "2025-12-11T10:38:59.884910",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8.xsd",
+            "extension": ".xsd",
+            "size_bytes": 23878,
+            "last_modified": "2025-12-11T10:38:59.944853",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p1.png",
+            "extension": ".png",
+            "size_bytes": 31906,
+            "last_modified": "2025-12-11T10:38:59.886364",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p10.png",
+            "extension": ".png",
+            "size_bytes": 33322,
+            "last_modified": "2025-12-11T10:38:59.887177",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p11.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.887177",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p12.png",
+            "extension": ".png",
+            "size_bytes": 20282,
+            "last_modified": "2025-12-11T10:38:59.887177",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p13.png",
+            "extension": ".png",
+            "size_bytes": 32085,
+            "last_modified": "2025-12-11T10:38:59.889889",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p14.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.889889",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p15.png",
+            "extension": ".png",
+            "size_bytes": 26020,
+            "last_modified": "2025-12-11T10:38:59.889889",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p16.png",
+            "extension": ".png",
+            "size_bytes": 19568,
+            "last_modified": "2025-12-11T10:38:59.892502",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p17.png",
+            "extension": ".png",
+            "size_bytes": 18841,
+            "last_modified": "2025-12-11T10:38:59.895163",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p18.png",
+            "extension": ".png",
+            "size_bytes": 20859,
+            "last_modified": "2025-12-11T10:38:59.895163",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p19.png",
+            "extension": ".png",
+            "size_bytes": 22363,
+            "last_modified": "2025-12-11T10:38:59.896680",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.896680",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p20.png",
+            "extension": ".png",
+            "size_bytes": 29887,
+            "last_modified": "2025-12-11T10:38:59.896680",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p3.png",
+            "extension": ".png",
+            "size_bytes": 16863,
+            "last_modified": "2025-12-11T10:38:59.899699",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p4.png",
+            "extension": ".png",
+            "size_bytes": 31907,
+            "last_modified": "2025-12-11T10:38:59.900471",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.901479",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p6.png",
+            "extension": ".png",
+            "size_bytes": 16252,
+            "last_modified": "2025-12-11T10:38:59.901479",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p7.png",
+            "extension": ".png",
+            "size_bytes": 30523,
+            "last_modified": "2025-12-11T10:38:59.903535",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p8.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.904871",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_8_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_8_p9.png",
+            "extension": ".png",
+            "size_bytes": 18654,
+            "last_modified": "2025-12-11T10:38:59.906975",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9.html",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9.html",
+            "extension": ".html",
+            "size_bytes": 1813428,
+            "last_modified": "2025-12-11T10:38:55.104014",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9.xsd",
+            "extension": ".xsd",
+            "size_bytes": 23878,
+            "last_modified": "2025-12-11T10:38:55.167448",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p1.png",
+            "extension": ".png",
+            "size_bytes": 31906,
+            "last_modified": "2025-12-11T10:38:55.105684",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p10.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p10.png",
+            "extension": ".png",
+            "size_bytes": 33322,
+            "last_modified": "2025-12-11T10:38:55.107165",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p11.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p11.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.107165",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p12.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p12.png",
+            "extension": ".png",
+            "size_bytes": 20282,
+            "last_modified": "2025-12-11T10:38:55.110071",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p13.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p13.png",
+            "extension": ".png",
+            "size_bytes": 32085,
+            "last_modified": "2025-12-11T10:38:55.110920",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p14.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p14.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.111931",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p15.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p15.png",
+            "extension": ".png",
+            "size_bytes": 26020,
+            "last_modified": "2025-12-11T10:38:55.111931",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p16.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p16.png",
+            "extension": ".png",
+            "size_bytes": 19568,
+            "last_modified": "2025-12-11T10:38:55.111931",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p17.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p17.png",
+            "extension": ".png",
+            "size_bytes": 18841,
+            "last_modified": "2025-12-11T10:38:55.116108",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p18.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p18.png",
+            "extension": ".png",
+            "size_bytes": 20859,
+            "last_modified": "2025-12-11T10:38:55.116795",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p19.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p19.png",
+            "extension": ".png",
+            "size_bytes": 22363,
+            "last_modified": "2025-12-11T10:38:55.116795",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.116795",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p20.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p20.png",
+            "extension": ".png",
+            "size_bytes": 29887,
+            "last_modified": "2025-12-11T10:38:55.116795",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p3.png",
+            "extension": ".png",
+            "size_bytes": 16863,
+            "last_modified": "2025-12-11T10:38:55.116795",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p4.png",
+            "extension": ".png",
+            "size_bytes": 31907,
+            "last_modified": "2025-12-11T10:38:55.124137",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.124137",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p6.png",
+            "extension": ".png",
+            "size_bytes": 16252,
+            "last_modified": "2025-12-11T10:38:55.124137",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p7.png",
+            "extension": ".png",
+            "size_bytes": 30523,
+            "last_modified": "2025-12-11T10:38:55.127702",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p8.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.127702",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2M_v1_0_9_p9.png",
+            "path": "database_docs\\BCL_ANCRDT_T2M_v1_0_9_p9.png",
+            "extension": ".png",
+            "size_bytes": 18654,
+            "last_modified": "2025-12-11T10:38:55.127702",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_10.html",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_10.html",
+            "extension": ".html",
+            "size_bytes": 520502,
+            "last_modified": "2025-12-11T10:38:53.453488",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_10.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_10.xsd",
+            "extension": ".xsd",
+            "size_bytes": 17230,
+            "last_modified": "2025-12-11T10:38:53.488212",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_10_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_10_p1.png",
+            "extension": ".png",
+            "size_bytes": 31405,
+            "last_modified": "2025-12-11T10:38:53.453488",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_10_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_10_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.453488",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_10_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_10_p3.png",
+            "extension": ".png",
+            "size_bytes": 33310,
+            "last_modified": "2025-12-11T10:38:53.458673",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_10_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_10_p4.png",
+            "extension": ".png",
+            "size_bytes": 30523,
+            "last_modified": "2025-12-11T10:38:53.459395",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_10_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_10_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:53.460517",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_10_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_10_p6.png",
+            "extension": ".png",
+            "size_bytes": 18654,
+            "last_modified": "2025-12-11T10:38:53.460517",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_10_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_10_p7.png",
+            "extension": ".png",
+            "size_bytes": 37503,
+            "last_modified": "2025-12-11T10:38:53.460517",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_10_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_10_p8.png",
+            "extension": ".png",
+            "size_bytes": 20859,
+            "last_modified": "2025-12-11T10:38:53.460517",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_11.html",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_11.html",
+            "extension": ".html",
+            "size_bytes": 520502,
+            "last_modified": "2025-12-11T10:38:51.480108",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_11.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_11.xsd",
+            "extension": ".xsd",
+            "size_bytes": 17230,
+            "last_modified": "2025-12-11T10:38:51.509817",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_11_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_11_p1.png",
+            "extension": ".png",
+            "size_bytes": 31422,
+            "last_modified": "2025-12-11T10:38:51.480108",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_11_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_11_p2.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.482423",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_11_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_11_p3.png",
+            "extension": ".png",
+            "size_bytes": 33655,
+            "last_modified": "2025-12-11T10:38:51.484527",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_11_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_11_p4.png",
+            "extension": ".png",
+            "size_bytes": 30531,
+            "last_modified": "2025-12-11T10:38:51.484527",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_11_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_11_p5.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:51.484527",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_11_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_11_p6.png",
+            "extension": ".png",
+            "size_bytes": 18674,
+            "last_modified": "2025-12-11T10:38:51.487837",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_11_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_11_p7.png",
+            "extension": ".png",
+            "size_bytes": 37538,
+            "last_modified": "2025-12-11T10:38:51.487837",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_11_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_11_p8.png",
+            "extension": ".png",
+            "size_bytes": 20881,
+            "last_modified": "2025-12-11T10:38:51.487837",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_12.html",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_12.html",
+            "extension": ".html",
+            "size_bytes": 520502,
+            "last_modified": "2025-12-11T10:38:49.762808",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_12.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_12.xsd",
+            "extension": ".xsd",
+            "size_bytes": 17230,
+            "last_modified": "2025-12-11T10:38:49.800197",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_12_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_12_p1.png",
+            "extension": ".png",
+            "size_bytes": 31422,
+            "last_modified": "2025-12-11T10:38:49.762808",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_12_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_12_p2.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.762808",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_12_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_12_p3.png",
+            "extension": ".png",
+            "size_bytes": 33655,
+            "last_modified": "2025-12-11T10:38:49.769023",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_12_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_12_p4.png",
+            "extension": ".png",
+            "size_bytes": 30531,
+            "last_modified": "2025-12-11T10:38:49.769023",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_12_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_12_p5.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:49.769023",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_12_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_12_p6.png",
+            "extension": ".png",
+            "size_bytes": 18674,
+            "last_modified": "2025-12-11T10:38:49.769023",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_12_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_12_p7.png",
+            "extension": ".png",
+            "size_bytes": 37538,
+            "last_modified": "2025-12-11T10:38:49.772564",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_12_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_12_p8.png",
+            "extension": ".png",
+            "size_bytes": 20881,
+            "last_modified": "2025-12-11T10:38:49.772564",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_13.html",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_13.html",
+            "extension": ".html",
+            "size_bytes": 521126,
+            "last_modified": "2025-12-11T10:38:47.694194",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_13.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_13.xsd",
+            "extension": ".xsd",
+            "size_bytes": 17222,
+            "last_modified": "2025-12-11T10:38:47.760533",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_13_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_13_p1.png",
+            "extension": ".png",
+            "size_bytes": 31422,
+            "last_modified": "2025-12-11T10:38:47.696776",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_13_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_13_p2.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.696776",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_13_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_13_p3.png",
+            "extension": ".png",
+            "size_bytes": 33655,
+            "last_modified": "2025-12-11T10:38:47.699264",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_13_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_13_p4.png",
+            "extension": ".png",
+            "size_bytes": 30531,
+            "last_modified": "2025-12-11T10:38:47.701273",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_13_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_13_p5.png",
+            "extension": ".png",
+            "size_bytes": 2853,
+            "last_modified": "2025-12-11T10:38:47.702550",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_13_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_13_p6.png",
+            "extension": ".png",
+            "size_bytes": 18674,
+            "last_modified": "2025-12-11T10:38:47.703556",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_13_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_13_p7.png",
+            "extension": ".png",
+            "size_bytes": 37538,
+            "last_modified": "2025-12-11T10:38:47.706131",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_13_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_13_p8.png",
+            "extension": ".png",
+            "size_bytes": 20881,
+            "last_modified": "2025-12-11T10:38:47.707712",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_7.html",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_7.html",
+            "extension": ".html",
+            "size_bytes": 519853,
+            "last_modified": "2025-12-11T10:39:01.695383",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_7.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_7.xsd",
+            "extension": ".xsd",
+            "size_bytes": 17224,
+            "last_modified": "2025-12-11T10:39:01.776964",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_7_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_7_p1.png",
+            "extension": ".png",
+            "size_bytes": 31405,
+            "last_modified": "2025-12-11T10:39:01.695383",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_7_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_7_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.695383",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_7_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_7_p3.png",
+            "extension": ".png",
+            "size_bytes": 33310,
+            "last_modified": "2025-12-11T10:39:01.695383",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_7_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_7_p4.png",
+            "extension": ".png",
+            "size_bytes": 30523,
+            "last_modified": "2025-12-11T10:39:01.707114",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_7_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_7_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:39:01.707114",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_7_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_7_p6.png",
+            "extension": ".png",
+            "size_bytes": 18654,
+            "last_modified": "2025-12-11T10:39:01.707114",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_7_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_7_p7.png",
+            "extension": ".png",
+            "size_bytes": 37503,
+            "last_modified": "2025-12-11T10:39:01.707114",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_7_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_7_p8.png",
+            "extension": ".png",
+            "size_bytes": 20859,
+            "last_modified": "2025-12-11T10:39:01.707114",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_8.html",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_8.html",
+            "extension": ".html",
+            "size_bytes": 519853,
+            "last_modified": "2025-12-11T10:38:59.909652",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_8.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_8.xsd",
+            "extension": ".xsd",
+            "size_bytes": 17224,
+            "last_modified": "2025-12-11T10:38:59.946308",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_8_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_8_p1.png",
+            "extension": ".png",
+            "size_bytes": 31405,
+            "last_modified": "2025-12-11T10:38:59.909652",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_8_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_8_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.909652",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_8_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_8_p3.png",
+            "extension": ".png",
+            "size_bytes": 33310,
+            "last_modified": "2025-12-11T10:38:59.909652",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_8_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_8_p4.png",
+            "extension": ".png",
+            "size_bytes": 30523,
+            "last_modified": "2025-12-11T10:38:59.913452",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_8_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_8_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:59.914010",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_8_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_8_p6.png",
+            "extension": ".png",
+            "size_bytes": 18654,
+            "last_modified": "2025-12-11T10:38:59.915692",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_8_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_8_p7.png",
+            "extension": ".png",
+            "size_bytes": 37503,
+            "last_modified": "2025-12-11T10:38:59.917620",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_8_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_8_p8.png",
+            "extension": ".png",
+            "size_bytes": 20859,
+            "last_modified": "2025-12-11T10:38:59.917620",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_9.html",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_9.html",
+            "extension": ".html",
+            "size_bytes": 519853,
+            "last_modified": "2025-12-11T10:38:55.127702",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_9.xsd",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_9.xsd",
+            "extension": ".xsd",
+            "size_bytes": 17224,
+            "last_modified": "2025-12-11T10:38:55.167448",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_9_p1.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_9_p1.png",
+            "extension": ".png",
+            "size_bytes": 31405,
+            "last_modified": "2025-12-11T10:38:55.127702",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_9_p2.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_9_p2.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.127702",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_9_p3.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_9_p3.png",
+            "extension": ".png",
+            "size_bytes": 33310,
+            "last_modified": "2025-12-11T10:38:55.127702",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_9_p4.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_9_p4.png",
+            "extension": ".png",
+            "size_bytes": 30523,
+            "last_modified": "2025-12-11T10:38:55.137089",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_9_p5.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_9_p5.png",
+            "extension": ".png",
+            "size_bytes": 2802,
+            "last_modified": "2025-12-11T10:38:55.138612",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_9_p6.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_9_p6.png",
+            "extension": ".png",
+            "size_bytes": 18654,
+            "last_modified": "2025-12-11T10:38:55.138612",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_9_p7.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_9_p7.png",
+            "extension": ".png",
+            "size_bytes": 37503,
+            "last_modified": "2025-12-11T10:38:55.138612",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_ANCRDT_T2Q_v1_0_9_p8.png",
+            "path": "database_docs\\BCL_ANCRDT_T2Q_v1_0_9_p8.png",
+            "extension": ".png",
+            "size_bytes": 20859,
+            "last_modified": "2025-12-11T10:38:55.138612",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_10.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_10.html",
+            "extension": ".html",
+            "size_bytes": 7564836,
+            "last_modified": "2025-12-11T10:38:53.471809",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_10.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_10.xsd",
+            "extension": ".xsd",
+            "size_bytes": 865672,
+            "last_modified": "2025-12-11T10:38:53.494288",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_11.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_11.html",
+            "extension": ".html",
+            "size_bytes": 4871507,
+            "last_modified": "2025-12-11T10:38:51.495130",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_11.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_11.xsd",
+            "extension": ".xsd",
+            "size_bytes": 573438,
+            "last_modified": "2025-12-11T10:38:51.518253",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_12.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_12.html",
+            "extension": ".html",
+            "size_bytes": 4882830,
+            "last_modified": "2025-12-11T10:38:49.776816",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_12.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_12.xsd",
+            "extension": ".xsd",
+            "size_bytes": 574715,
+            "last_modified": "2025-12-11T10:38:49.800197",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_13.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_13.html",
+            "extension": ".html",
+            "size_bytes": 4993791,
+            "last_modified": "2025-12-11T10:38:47.728868",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_13.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_13.xsd",
+            "extension": ".xsd",
+            "size_bytes": 456229,
+            "last_modified": "2025-12-11T10:38:47.763658",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_7.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_7.html",
+            "extension": ".html",
+            "size_bytes": 5189083,
+            "last_modified": "2025-12-11T10:39:01.739325",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_7.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_7.xsd",
+            "extension": ".xsd",
+            "size_bytes": 585872,
+            "last_modified": "2025-12-11T10:39:01.782600",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_8.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_8.html",
+            "extension": ".html",
+            "size_bytes": 5260643,
+            "last_modified": "2025-12-11T10:38:59.927567",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_8.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_8.xsd",
+            "extension": ".xsd",
+            "size_bytes": 594223,
+            "last_modified": "2025-12-11T10:38:59.947200",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_9.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_9.html",
+            "extension": ".html",
+            "size_bytes": 5260643,
+            "last_modified": "2025-12-11T10:38:55.149459",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_9.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_9.xsd",
+            "extension": ".xsd",
+            "size_bytes": 594223,
+            "last_modified": "2025-12-11T10:38:55.171816",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_10.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_10.html",
+            "extension": ".html",
+            "size_bytes": 123219,
+            "last_modified": "2025-12-11T10:38:53.479529",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_10.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_10.xsd",
+            "extension": ".xsd",
+            "size_bytes": 5557,
+            "last_modified": "2025-12-11T10:38:53.494288",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_11.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_11.html",
+            "extension": ".html",
+            "size_bytes": 65371,
+            "last_modified": "2025-12-11T10:38:51.501219",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_11.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_11.xsd",
+            "extension": ".xsd",
+            "size_bytes": 2924,
+            "last_modified": "2025-12-11T10:38:51.518253",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_12.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_12.html",
+            "extension": ".html",
+            "size_bytes": 60946,
+            "last_modified": "2025-12-11T10:38:49.776816",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_12.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_12.xsd",
+            "extension": ".xsd",
+            "size_bytes": 2732,
+            "last_modified": "2025-12-11T10:38:49.800197",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_13.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_13.html",
+            "extension": ".html",
+            "size_bytes": 60946,
+            "last_modified": "2025-12-11T10:38:47.734816",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_13.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_13.xsd",
+            "extension": ".xsd",
+            "size_bytes": 2732,
+            "last_modified": "2025-12-11T10:38:47.766411",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_7.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_7.html",
+            "extension": ".html",
+            "size_bytes": 43263,
+            "last_modified": "2025-12-11T10:39:01.743960",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_7.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_7.xsd",
+            "extension": ".xsd",
+            "size_bytes": 1980,
+            "last_modified": "2025-12-11T10:39:01.782600",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_8.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_8.html",
+            "extension": ".html",
+            "size_bytes": 52059,
+            "last_modified": "2025-12-11T10:38:59.930843",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_8.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_8.xsd",
+            "extension": ".xsd",
+            "size_bytes": 2337,
+            "last_modified": "2025-12-11T10:38:59.949705",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_9.html",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_9.html",
+            "extension": ".html",
+            "size_bytes": 52059,
+            "last_modified": "2025-12-11T10:38:55.149459",
+            "language": "unknown"
+        },
+        {
+            "name": "BCL_LU_ANCRDT_C_FORMATS_v1_0_9.xsd",
+            "path": "database_docs\\BCL_LU_ANCRDT_C_FORMATS_v1_0_9.xsd",
+            "extension": ".xsd",
+            "size_bytes": 2337,
+            "last_modified": "2025-12-11T10:38:55.171816",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_10.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_10.html",
+            "extension": ".html",
+            "size_bytes": 1649865,
+            "last_modified": "2025-12-11T10:38:53.483628",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_10.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_10.xsd",
+            "extension": ".xsd",
+            "size_bytes": 171484,
+            "last_modified": "2025-12-11T10:38:53.496547",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_11.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_11.html",
+            "extension": ".html",
+            "size_bytes": 4101337,
+            "last_modified": "2025-12-11T10:38:51.506279",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_11.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_11.xsd",
+            "extension": ".xsd",
+            "size_bytes": 438010,
+            "last_modified": "2025-12-11T10:38:51.518253",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_12.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_12.html",
+            "extension": ".html",
+            "size_bytes": 4099278,
+            "last_modified": "2025-12-11T10:38:49.787081",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_12.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_12.xsd",
+            "extension": ".xsd",
+            "size_bytes": 437782,
+            "last_modified": "2025-12-11T10:38:49.800197",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_13.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_13.html",
+            "extension": ".html",
+            "size_bytes": 4105459,
+            "last_modified": "2025-12-11T10:38:47.749262",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_13.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_13.xsd",
+            "extension": ".xsd",
+            "size_bytes": 438465,
+            "last_modified": "2025-12-11T10:38:47.767299",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_7.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_7.html",
+            "extension": ".html",
+            "size_bytes": 3686479,
+            "last_modified": "2025-12-11T10:39:01.763619",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_7.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_7.xsd",
+            "extension": ".xsd",
+            "size_bytes": 408616,
+            "last_modified": "2025-12-11T10:39:01.788325",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_8.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_8.html",
+            "extension": ".html",
+            "size_bytes": 3686479,
+            "last_modified": "2025-12-11T10:38:59.938008",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_8.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_8.xsd",
+            "extension": ".xsd",
+            "size_bytes": 408616,
+            "last_modified": "2025-12-11T10:38:59.949705",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_9.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_9.html",
+            "extension": ".html",
+            "size_bytes": 3939077,
+            "last_modified": "2025-12-11T10:38:55.160758",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_9.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_9.xsd",
+            "extension": ".xsd",
+            "size_bytes": 438483,
+            "last_modified": "2025-12-11T10:38:55.171816",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_10.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_10.html",
+            "extension": ".html",
+            "size_bytes": 401861,
+            "last_modified": "2025-12-11T10:38:53.486279",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_10.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_10.xsd",
+            "extension": ".xsd",
+            "size_bytes": 16642,
+            "last_modified": "2025-12-11T10:38:53.496547",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_11.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_11.html",
+            "extension": ".html",
+            "size_bytes": 542978,
+            "last_modified": "2025-12-11T10:38:51.509817",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_11.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_11.xsd",
+            "extension": ".xsd",
+            "size_bytes": 22558,
+            "last_modified": "2025-12-11T10:38:51.526848",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_12.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_12.html",
+            "extension": ".html",
+            "size_bytes": 565013,
+            "last_modified": "2025-12-11T10:38:49.792655",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_12.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_12.xsd",
+            "extension": ".xsd",
+            "size_bytes": 23475,
+            "last_modified": "2025-12-11T10:38:49.800197",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_13.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_13.html",
+            "extension": ".html",
+            "size_bytes": 569468,
+            "last_modified": "2025-12-11T10:38:47.752363",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_13.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_13.xsd",
+            "extension": ".xsd",
+            "size_bytes": 23688,
+            "last_modified": "2025-12-11T10:38:47.767299",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_7.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_7.html",
+            "extension": ".html",
+            "size_bytes": 388570,
+            "last_modified": "2025-12-11T10:39:01.767476",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_7.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_7.xsd",
+            "extension": ".xsd",
+            "size_bytes": 16102,
+            "last_modified": "2025-12-11T10:39:01.788325",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_8.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_8.html",
+            "extension": ".html",
+            "size_bytes": 463703,
+            "last_modified": "2025-12-11T10:38:59.940408",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_8.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_8.xsd",
+            "extension": ".xsd",
+            "size_bytes": 19308,
+            "last_modified": "2025-12-11T10:38:59.952897",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_9.html",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_9.html",
+            "extension": ".html",
+            "size_bytes": 463718,
+            "last_modified": "2025-12-11T10:38:55.160758",
+            "language": "unknown"
+        },
+        {
+            "name": "ECB_LU_ANCRDT_C_FORMATS_v1_0_9.xsd",
+            "path": "database_docs\\ECB_LU_ANCRDT_C_FORMATS_v1_0_9.xsd",
+            "extension": ".xsd",
+            "size_bytes": 19313,
+            "last_modified": "2025-12-11T10:38:55.171816",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_ANCRDT_LGL_FRM_SUBDOMAIN_DIFF_CODES_ONLY_v1_0_9_v1_0_10.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_ANCRDT_LGL_FRM_SUBDOMAIN_DIFF_CODES_ONLY_v1_0_9_v1_0_10.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 11752,
+            "last_modified": "2025-12-11T10:38:53.342411",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_10_v1_0_11.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_10_v1_0_11.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 19381,
+            "last_modified": "2025-12-11T10:38:51.382540",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_11_v1_0_12.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_11_v1_0_12.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 15456,
+            "last_modified": "2025-12-11T10:38:49.666793",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_12_v1_0_13.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_12_v1_0_13.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 15657,
+            "last_modified": "2025-12-11T10:38:47.602309",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_6_v1_0_7.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_6_v1_0_7.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 10173,
+            "last_modified": "2025-12-11T10:39:01.532112",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_7_v1_0_8.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_7_v1_0_8.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 15247,
+            "last_modified": "2025-12-11T10:38:59.811196",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_8_v1_0_9.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_8_v1_0_9.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 11547,
+            "last_modified": "2025-12-11T10:38:55.028140",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_9_v1_0_10.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_9_v1_0_10.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 16788,
+            "last_modified": "2025-12-11T10:38:53.346869",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_10.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_10.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 50335,
+            "last_modified": "2025-12-11T10:38:53.368132",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_11.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_11.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 55707,
+            "last_modified": "2025-12-11T10:38:51.395539",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_12.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_12.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 56188,
+            "last_modified": "2025-12-11T10:38:49.683289",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_13.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_13.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 56427,
+            "last_modified": "2025-12-11T10:38:47.610240",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_7.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_7.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 48087,
+            "last_modified": "2025-12-11T10:39:01.540209",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_8.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_8.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 50558,
+            "last_modified": "2025-12-11T10:38:59.815597",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_9.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_9.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 50449,
+            "last_modified": "2025-12-11T10:38:55.034252",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_DIFF_v1_0_10_v1_0_11.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_DIFF_v1_0_10_v1_0_11.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 11560,
+            "last_modified": "2025-12-11T10:38:51.386354",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_DIFF_v1_0_11_v1_0_12.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_DIFF_v1_0_11_v1_0_12.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 11264,
+            "last_modified": "2025-12-11T10:38:49.671352",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_DIFF_v1_0_12_v1_0_13.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_DIFF_v1_0_12_v1_0_13.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 10719,
+            "last_modified": "2025-12-11T10:38:47.603568",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_DIFF_v1_0_6_v1_0_7.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_DIFF_v1_0_6_v1_0_7.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 9116,
+            "last_modified": "2025-12-11T10:39:01.534376",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_DIFF_v1_0_7_v1_0_8.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_DIFF_v1_0_7_v1_0_8.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 9839,
+            "last_modified": "2025-12-11T10:38:59.813031",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_DIFF_v1_0_8_v1_0_9.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_DIFF_v1_0_8_v1_0_9.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 8702,
+            "last_modified": "2025-12-11T10:38:55.028140",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_DIFF_v1_0_9_v1_0_10.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_DIFF_v1_0_9_v1_0_10.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 10822,
+            "last_modified": "2025-12-11T10:38:53.359250",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_v1_0_10.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_v1_0_10.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 16379,
+            "last_modified": "2025-12-11T10:38:53.369526",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_v1_0_11.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_v1_0_11.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 16486,
+            "last_modified": "2025-12-11T10:38:51.395539",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_v1_0_12.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_v1_0_12.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 17305,
+            "last_modified": "2025-12-11T10:38:49.685272",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_v1_0_13.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_v1_0_13.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 17472,
+            "last_modified": "2025-12-11T10:38:47.611050",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_v1_0_7.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_v1_0_7.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 14758,
+            "last_modified": "2025-12-11T10:39:01.542471",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_v1_0_8.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_v1_0_8.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 16012,
+            "last_modified": "2025-12-11T10:38:59.822506",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_FACETS_v1_0_9.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_FACETS_v1_0_9.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 16048,
+            "last_modified": "2025-12-11T10:38:55.034252",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_NUTS3_ANCRDT_CLLCTN_SUBDOMAIN_DIFF_CODES_ONLY_v1_0_10_v1_0_11.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_NUTS3_ANCRDT_CLLCTN_SUBDOMAIN_DIFF_CODES_ONLY_v1_0_10_v1_0_11.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 14482,
+            "last_modified": "2025-12-11T10:38:51.390727",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_10_v1_0_11.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_10_v1_0_11.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 112480,
+            "last_modified": "2025-12-11T10:38:51.392188",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_11_v1_0_12.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_11_v1_0_12.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 16521,
+            "last_modified": "2025-12-11T10:38:49.676784",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_12_v1_0_13.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_12_v1_0_13.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 97837,
+            "last_modified": "2025-12-11T10:38:47.605824",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_6_v1_0_7.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_6_v1_0_7.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 12111,
+            "last_modified": "2025-12-11T10:39:01.536189",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_7_v1_0_8.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_7_v1_0_8.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 13065,
+            "last_modified": "2025-12-11T10:38:59.814020",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_8_v1_0_9.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_8_v1_0_9.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 18180,
+            "last_modified": "2025-12-11T10:38:55.034252",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_9_v1_0_10.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_9_v1_0_10.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 111022,
+            "last_modified": "2025-12-11T10:38:53.366021",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_v1_0_10.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_v1_0_10.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 181354,
+            "last_modified": "2025-12-11T10:38:53.371644",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_v1_0_11.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_v1_0_11.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 185682,
+            "last_modified": "2025-12-11T10:38:51.398036",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_v1_0_12.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_v1_0_12.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 186417,
+            "last_modified": "2025-12-11T10:38:49.687855",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_v1_0_13.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_v1_0_13.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 190222,
+            "last_modified": "2025-12-11T10:38:47.613771",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_v1_0_7.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_v1_0_7.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 175998,
+            "last_modified": "2025-12-11T10:39:01.543631",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_v1_0_8.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_v1_0_8.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 176390,
+            "last_modified": "2025-12-11T10:38:59.824614",
+            "language": "unknown"
+        },
+        {
+            "name": "LU_ANCRDT_C_SUBDOMAINS_v1_0_9.xlsx",
+            "path": "database_docs\\LU_ANCRDT_C_SUBDOMAINS_v1_0_9.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 180332,
+            "last_modified": "2025-12-11T10:38:55.039192",
+            "language": "unknown"
+        },
+        {
+            "name": "Thumbs.db",
+            "path": "database_docs\\Thumbs.db",
+            "extension": ".db",
+            "size_bytes": 23040,
+            "last_modified": "2025-12-11T10:38:51.509817",
+            "language": "unknown"
+        },
+        {
+            "name": "~$AnaCredit_subdomains_v1_0_11.xlsx",
+            "path": "database_docs\\~$AnaCredit_subdomains_v1_0_11.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 165,
+            "last_modified": "2025-12-11T10:38:51.528697",
+            "language": "unknown"
+        },
+        {
+            "name": "~$List_of_national_identifiers.xlsx",
+            "path": "database_docs\\~$List_of_national_identifiers.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 165,
+            "last_modified": "2025-12-11T10:38:51.528697",
+            "language": "unknown"
+        },
+        {
+            "name": "~$LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_11_v1_0_12.xlsx",
+            "path": "database_docs\\~$LU_ANCRDT_C_CUBE_STRUCTURES_DIFF_v1_0_11_v1_0_12.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 165,
+            "last_modified": "2025-12-11T10:38:49.679655",
+            "language": "unknown"
+        },
+        {
+            "name": "~$LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_12.xlsx",
+            "path": "database_docs\\~$LU_ANCRDT_C_CUBE_STRUCTURES_v1_0_12.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 165,
+            "last_modified": "2025-12-11T10:38:49.792655",
+            "language": "unknown"
+        },
+        {
+            "name": "~$LU_ANCRDT_C_FACETS_DIFF_v1_0_11_v1_0_12.xlsx",
+            "path": "database_docs\\~$LU_ANCRDT_C_FACETS_DIFF_v1_0_11_v1_0_12.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 165,
+            "last_modified": "2025-12-11T10:38:49.680718",
+            "language": "unknown"
+        },
+        {
+            "name": "~$LU_ANCRDT_C_FACETS_v1_0_12.xlsx",
+            "path": "database_docs\\~$LU_ANCRDT_C_FACETS_v1_0_12.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 165,
+            "last_modified": "2025-12-11T10:38:49.792655",
+            "language": "unknown"
+        },
+        {
+            "name": "~$LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_10_v1_0_11.xlsx",
+            "path": "database_docs\\~$LU_ANCRDT_C_SUBDOMAINS_DIFF_v1_0_10_v1_0_11.xlsx",
+            "extension": ".xlsx",
+            "size_bytes": 165,
+            "last_modified": "2025-12-11T10:38:51.392188",
+            "language": "unknown"
+        }
+    ]
+}

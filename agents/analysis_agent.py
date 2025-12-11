@@ -1,96 +1,95 @@
-from sentence_transformers import SentenceTransformer, util
+import re
 from transformers import pipeline
-from agent.document_loader import DocumentLoader
-
+from langdetect import detect
+from datetime import datetime
+import os
 
 class AnalysisComparisonAgent:
+    def __init__(self, summarizer_model="facebook/bart-large-cnn"):
+        self.summarizer = pipeline("summarization", model=summarizer_model)
 
-    def __init__(self):
-        # Chargeur de documents multi-format
-        self.loader = DocumentLoader()
+    def extract_text(self, file_path):
+        ext = file_path.lower().split(".")[-1]
+        if ext == "txt":
+            with open(file_path, "r", encoding="utf-8") as f:
+                return f.read()
+        elif ext == "pdf":
+            import pdfplumber
+            text = ""
+            with pdfplumber.open(file_path) as pdf:
+                for page in pdf.pages:
+                    extracted = page.extract_text()
+                    if extracted:
+                        text += extracted + "\n"
+            return text
+        elif ext in ("xml", "csv", "xlsx"):
+            import pandas as pd
+            if ext == "csv":
+                df = pd.read_csv(file_path)
+            elif ext == "xlsx":
+                df = pd.read_excel(file_path)
+            else:  # xml
+                import xml.etree.ElementTree as ET
+                tree = ET.parse(file_path)
+                root = tree.getroot()
+                text = "\n".join([elem.text for elem in root.iter() if elem.text])
+                return text
+            rows = [" - ".join([f"{col}: {row[col]}" for col in df.columns]) for _, row in df.iterrows()]
+            return "\n".join(rows)
+        else:
+            raise ValueError(f"Format non supporté : {file_path}")
 
-        # Embedding gratuit pour comparaison IA
-        self.embedder = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+    def keyword_context(self, text, keyword, window=200):
+        pattern = re.compile(keyword, re.IGNORECASE)
+        matches = []
+        for m in pattern.finditer(text):
+            start = max(0, m.start() - window)
+            end = min(len(text), m.end() + window)
+            matches.append(text[start:end])
+        return matches
 
-        # Résumeur IA gratuit
-        self.summarizer = pipeline(
-            "summarization",
-            model="facebook/bart-large-cnn",
-            tokenizer="facebook/bart-large-cnn",
-        )
+    def compare_versions(self, old_text, new_text, keyword):
+        old_ctx = " ".join(self.keyword_context(old_text, keyword))
+        new_ctx = " ".join(self.keyword_context(new_text, keyword))
+        keyword_found = bool(old_ctx.strip() or new_ctx.strip())
+        return old_ctx, new_ctx, keyword_found
 
-    # --- extrait le contexte d’un mot-clé ---
-    def extract_keyword_context(self, text, keyword, window=80):
-        text_lower = text.lower()
-        keyword_lower = keyword.lower()
+    def chunk_text(self, text, max_words=500):
+        words = text.split()
+        return [" ".join(words[i:i + max_words]) for i in range(0, len(words), max_words)]
 
-        if keyword_lower not in text_lower:
-            return None
+    def summarize_change(self, text):
+        if not text.strip():
+            return "Pas assez de texte pour résumé."
+        if len(text.split()) > 500:
+            text = " ".join(text.split()[:500])
+        summary = self.summarizer(text, max_length=150, min_length=40, do_sample=False)
+        return summary[0]['summary_text']
 
-        pos = text_lower.index(keyword_lower)
+    def summarize_large_text(self, text):
+        chunks = self.chunk_text(text)
+        summaries = [self.summarize_change(chunk) for chunk in chunks]
+        return " ".join(summaries)
 
-        start = max(0, pos - window)
-        end = min(len(text), pos + len(keyword) + window)
+    def analyze_change(self, old_path, new_path, keywords, bank="Unknown"):
+        if isinstance(keywords, str):
+            keywords = [keywords]
 
-        return text[start:end]
+        old_text = self.extract_text(old_path)
+        new_text = self.extract_text(new_path)
 
-    # --- IA : comparaison sémantique ---
-    def compare_texts(self, text_old, text_new):
-        emb_old = self.embedder.encode(text_old or "")
-        emb_new = self.embedder.encode(text_new or "")
-        score = float(util.cos_sim(emb_old, emb_new))
-        return score
+        summaries = []
+        for kw in keywords:
+            _, new_ctx, found = self.compare_versions(old_text, new_text, kw)
+            summary = self.summarize_large_text(new_ctx) if found else f"Mot-clé introuvable : {kw}"
+            summaries.append(summary)
 
-    # --- IA : résumé du changement ---
-    def summarize_changes(self, old_ctx, new_ctx):
-        if not old_ctx:
-            old_ctx = "No previous regulation."
-
-        if not new_ctx:
-            new_ctx = "No update found."
-
-        text = (
-            f"Old version:\n{old_ctx}\n\n"
-            f"New version:\n{new_ctx}\n\n"
-            "Summarize the change."
-        )
-
-        summary = self.summarizer(
-            text,
-            max_length=150,
-            min_length=50,
-            do_sample=False
-        )[0]["summary_text"]
-
-        return summary
-
-    # --- Pipeline complet ---
-    def analyze_change(self, old_path, new_path, keyword):
-        # 1. Load documents
-        old_text = self.loader.load(old_path)
-        new_text = self.loader.load(new_path)
-
-        # 2. Extract keyword context
-        old_ctx = self.extract_keyword_context(old_text, keyword)
-        new_ctx = self.extract_keyword_context(new_text, keyword)
-
-        if old_ctx is None and new_ctx is None:
-            return {
-                "keyword_found": False,
-                "message": "Mot clé introuvable dans les deux documents."
-            }
-
-        # 3. IA Comparison
-        similarity = self.compare_texts(old_ctx or "", new_ctx or "")
-
-        # 4. AI Summary
-        summary = self.summarize_changes(old_ctx, new_ctx)
-
-        # 5. Build response
-        return {
-            "keyword_found": True,
-            "old_context": old_ctx,
-            "new_context": new_ctx,
-            "similarity_score": similarity,
-            "summary": summary
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
+        analysis_result = {
+            "filename": os.path.basename(new_path),
+            "bank": bank,
+            "keywords": keywords,
+            "summary": " ".join(summaries),
+            "timestamp": timestamp
         }
+        return analysis_result
