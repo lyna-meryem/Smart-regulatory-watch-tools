@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-import logging
+<<<<<<< HEADimport logging
 import os
 
 # Configuration du log pour l'agent d'extraction
