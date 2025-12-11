@@ -49,7 +49,6 @@ def main():
 # Lancer l'exécution principale
 if __name__ == "__main__":
     main()
-=======
 import os
 import requests
 from bs4 import BeautifulSoup
