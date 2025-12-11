@@ -1,45 +1,52 @@
+import hashlib
 import os
 import csv
 from datetime import datetime
 
-# Utiliser le chemin absolu
-directory = r'C:\Users\Ahmed Khalil KADRI\Documents\Smart-regulatory-watch-tools\agents\database_docs'
+# Chemin du répertoire contenant les fichiers
+directory_path = './database_docs/'
 
-# Liste des fichiers dans le répertoire
-files = os.listdir(directory)
+# Fonction pour calculer le hash SHA-256 d'un fichier
+def hash_file(file_path):
+    """Retourne le hash SHA-256 d'un fichier"""
+    sha256_hash = hashlib.sha256()
 
-# Créer une liste pour stocker les métadonnées des fichiers
-metadata = []
+    try:
+        # Ouvre le fichier en mode binaire
+        with open(file_path, "rb") as f:
+            # Lire par morceaux de 4k
+            for byte_block in iter(lambda: f.read(4096), b""):
+                sha256_hash.update(byte_block)
 
-# Parcourir les fichiers et récupérer les informations
-for file in files:
-    file_path = os.path.join(directory, file)
-    
-    if os.path.isfile(file_path):
-        # Obtenir les informations du fichier
-        file_size = os.path.getsize(file_path)  # Taille du fichier en octets
-        creation_time = os.path.getctime(file_path)  # Temps de création
-        creation_date = datetime.fromtimestamp(creation_time).strftime('%Y-%m-%d %H:%M:%S')  # Format de la date
-        
-        # Ajouter les métadonnées à la liste
-        metadata.append({
-            'Filename': file,
-            'Size (bytes)': file_size,
-            'Creation Date': creation_date
-        })
+        # Retourne le hash hexadécimal
+        return sha256_hash.hexdigest()
 
-# Chemin du fichier CSV de sortie
-csv_file_path = os.path.join(directory, 'metadata.csv')
+    except FileNotFoundError:
+        print(f"⚠️ Le fichier {file_path} est introuvable.")
+        return None
 
-# Écrire les métadonnées dans un fichier CSV
-with open(csv_file_path, mode='w', newline='') as csvfile:
-    fieldnames = ['Filename', 'Size (bytes)', 'Creation Date']
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-    
-    # Écrire l'en-tête
-    writer.writeheader()
-    
-    # Écrire les données des fichiers
-    writer.writerows(metadata)
+# Création du chemin pour le fichier CSV
+csv_file_path = './metadonnees.csv'
 
-print(f'Métadonnées sauvegardées dans {csv_file_path}')
+# Titre des colonnes du CSV
+header = ['File Name', 'SHA-256 Hash']
+
+# Ouverture du fichier CSV en mode écriture
+with open(csv_file_path, mode='w', newline='', encoding='utf-8') as file:
+    writer = csv.writer(file)
+    writer.writerow(header)  # Écrire l'en-tête
+
+    # Parcours de tous les fichiers dans le répertoire
+    for file_name in os.listdir(directory_path):
+        file_path = os.path.join(directory_path, file_name)
+
+        # Vérification que c'est bien un fichier (pas un répertoire)
+        if os.path.isfile(file_path):
+            # Calculer le hash SHA-256 du fichier
+            file_hash = hash_file(file_path)
+
+            if file_hash:
+                # Écrire le nom du fichier et son hash dans le CSV
+                writer.writerow([file_name, file_hash])
+
+print(f"✔️ Tous les fichiers ont été traités et les hashes sont enregistrés dans {csv_file_path}.")
