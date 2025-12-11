@@ -1,4 +1,4 @@
-<<<<<<< HEADimport logging
+import logging
 import os
 
 # Configuration du log pour l'agent d'extraction
@@ -114,4 +114,4 @@ for link in soup.find_all("a"):
                     target.write(source.read())
 
 print("\n✅ Terminé ! Tous les fichiers sont dans :", OUTPUT_DIR)
->>>>>>> 831aeec (agent analyse)
+
