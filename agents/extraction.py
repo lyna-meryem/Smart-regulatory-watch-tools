@@ -1,30 +1,32 @@
 import os
+import requests
+from bs4 import BeautifulSoup
+from urllib.parse import urljoin
 
-# Chemin du repository Git, au même niveau que 'agents'
-repo_path = os.path.dirname(os.path.abspath(__file__))  # Répertoire actuel du script
-download_folder = os.path.join(repo_path, "downloaded_files")
+BASE_URL = "https://www.bcl.lu/en/Regulatory-reporting/Etablissements_credit/AnaCredit/Instructions/index.html"
+OUTPUT_DIR = "downloaded_files"
 
-# Vérifier si le dossier 'downloaded_files' existe déjà
-if not os.path.exists(download_folder):
-    os.makedirs(download_folder)
-    print(f"Dossier {download_folder} créé avec succès.")
-else:
-    print(f"Le dossier {download_folder} existe déjà.")
+# 1) Création du dossier local si nécessaire
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
+# 2) Récupération du HTML de la page
+response = requests.get(BASE_URL)
+soup = BeautifulSoup(response.text, "html.parser")
 
-import sqlite3
+# 3) Filtrer tous les liens PDF et ZIP
+for link in soup.find_all("a"):
+    href = link.get("href")
+    if href and (href.lower().endswith(".pdf") or href.lower().endswith(".zip")):
+        file_url = urljoin(BASE_URL, href)
 
-# Connexion à la base de données SQLite
-conn = sqlite3.connect('scraped_files.db')
-cursor = conn.cursor()
+        # 4) Préparer chemin local du fichier
+        file_name = os.path.basename(file_url)
+        local_path = os.path.join(OUTPUT_DIR, file_name)
 
-# Créer la table si elle n'existe pas
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS files (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        file_name TEXT NOT NULL,
-        file_type TEXT NOT NULL,
-        source_url TEXT NOT NULL,
-        date_downloaded TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    )
-''')
+        # 5) Télécharger chaque fichier
+        print(f"Downloading {file_name} ...")
+        file_resp = requests.get(file_url)
+        with open(local_path, "wb") as f:
+            f.write(file_resp.content)
+
+        print(f"✔ Saved {file_name} in {OUTPUT_DIR}")
