@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message:StructureSpecificData xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:data="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/structurespecific" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BCL_ANCRDT_T1_REF="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_13/BCL_ANCRDT_T1_REF" xsi:schemaLocation="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_13/BCL_ANCRDT_T1_REF ../schemas/BCL_ANCRDT_T1_REF_v1_0_13.xsd">
+	<message:Header>
+		<message:ID>BCL001</message:ID>
+		<message:Test>false</message:Test>
+		<message:Prepared>2026-02-01T14:36:00</message:Prepared>
+		<message:Sender id="LUB05665"/>
+		<message:Receiver id="LU2"/>
+		<message:Structure structureID="BCL_ANCRDT_REF_HDR_C" namespace="BCL_ANCRDT_REF_HDR_C" dimensionAtObservation="AllDimensions">
+			<common:Structure>
+				<Ref agencyID="BCL" id="BCL_ANCRDT_REF_HDR_C"/>
+			</common:Structure>
+		</message:Structure>
+		<message:Structure structureID="BCL_ANCRDT_ENTTY_C" namespace="BCL_ANCRDT_ENTTY_C" dimensionAtObservation="AllDimensions">
+			<common:Structure>
+				<Ref agencyID="BCL" id="BCL_ANCRDT_ENTTY_C"/>
+			</common:Structure>
+		</message:Structure>
+		<message:DataSetID>BCL_ANCRDT_T1_REF</message:DataSetID>
+	</message:Header>
+	<message:DataSet data:structureRef="BCL_ANCRDT_REF_HDR_C" xsi:type="BCL_ANCRDT_T1_REF:BCL_ANCRDT_REF_HDR_C" data:dataScope="DataStructure">
+		<Obs RPRTNG_AGNT_CD="LUB05665" DT_RFRNC="2026-01-31" TYP_RPRTNG="BCL_ANCRDT_T1_REF" SBMSSN_TYP="FULL_REPLACEMENT" IS_EMRGNCY_CRRCTN="false"/>
+	</message:DataSet>
+	<message:DataSet data:structureRef="BCL_ANCRDT_ENTTY_C" xsi:type="BCL_ANCRDT_T1_REF:BCL_ANCRDT_ENTTY_C" data:dataScope="DataStructure" data:action="Replace">
+		<Obs ENTTY_ID="CL-1" CH_FINMA_CD="F12345678" TYP_ENTTY_NTNL_ID="CH_FINMA_CD" NEVS_HD_OFFC_UNDRT_ID="-5" NEVS_IMMDT_PRNT_UNDRT_ID="-5" NEVS_ULTMT_PRNT_UNDRT_ID="-5" NM_ENTTY="TEST" STRT="10, rue des tests" CTY="Luxembourg" TRRTRL_UNT="DE712" PSTL_CD="60325" CNTRY="CH" LGL_FRM="DE201" INSTTTNL_SCTR="S122_A" ECNMC_ACTVTY="64_19"/>
+		<Obs ENTTY_ID="CL-2" TYP_ENTTY_NTNL_ID="LU_IF_CD" LU_IF_CD="LURCSB1234567" NEVS_HD_OFFC_UNDRT_ID="-5" NEVS_IMMDT_PRNT_UNDRT_ID="-5" NEVS_ULTMT_PRNT_UNDRT_ID="-5" NM_ENTTY="CL-2" STRT="99, boulevard test" CTY="Luxembourg" TRRTRL_UNT="LU000" PSTL_CD="1000" CNTRY="LU" LGL_FRM="LU16" INSTTTNL_SCTR="S121" ECNMC_ACTVTY="41_0"/>
+		<Obs ENTTY_ID="CL-3" TYP_ENTTY_NTNL_ID="PT_NIF_CD" PT_NIF_CD="512345678" NEVS_HD_OFFC_UNDRT_ID="-5" NEVS_IMMDT_PRNT_UNDRT_ID="-5" NEVS_ULTMT_PRNT_UNDRT_ID="-5" NM_ENTTY="CL-2" STRT="99, street test" CTY="Porto" TRRTRL_UNT="LU000" PSTL_CD="222" CNTRY="PT" LGL_FRM="LU07" INSTTTNL_SCTR="S125_E" ECNMC_ACTVTY="41_0"/>
+	</message:DataSet>
+</message:StructureSpecificData>

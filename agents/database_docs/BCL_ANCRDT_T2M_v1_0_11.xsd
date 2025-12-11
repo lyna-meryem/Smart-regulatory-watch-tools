@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:bclcnstrnt="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_11/BCL_LU_ANCRDT_C_CONSTRAINTS" xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:ecbfrmt="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_11/ECB_LU_ANCRDT_C_FORMATS" xmlns:bclfrmt="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_11/BCL_LU_ANCRDT_C_FORMATS" xmlns:dsd="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/structurespecific" xmlns="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_11/BCL_ANCRDT_T2M" xmlns:ecbcnstrnt="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_11/ECB_LU_ANCRDT_C_CONSTRAINTS" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" targetNamespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_11/BCL_ANCRDT_T2M" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:import namespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_11/BCL_LU_ANCRDT_C_FORMATS" schemaLocation="BCL_LU_ANCRDT_C_FORMATS_v1_0_11.xsd"/>
+    <xs:import namespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_11/BCL_LU_ANCRDT_C_CONSTRAINTS" schemaLocation="BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_11.xsd"/>
+    <xs:import namespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_11/ECB_LU_ANCRDT_C_FORMATS" schemaLocation="ECB_LU_ANCRDT_C_FORMATS_v1_0_11.xsd"/>
+    <xs:import namespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_11/ECB_LU_ANCRDT_C_CONSTRAINTS" schemaLocation="ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_11.xsd"/>
+    <xs:import namespace="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" schemaLocation="SDMXCommon.xsd"/>
+    <xs:import namespace="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/structurespecific" schemaLocation="SDMXDataStructureSpecific.xsd"/>
+    <xs:import namespace="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" schemaLocation="SDMXMessage.xsd"/>
+    <xs:complexType name="ObsBCL_ANCRDT_HDR_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Survey header data for credit data - BCL Collection (observations)</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:ObsType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+                <xs:attribute type="common:IDType" use="prohibited" name="type"/>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_50" use="required" name="RPRTNG_AGNT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Reporting agent identifier (identifier type: RIAD internal identifier)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_50" use="required" name="OBSRVD_AGNT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Observed agent identifier (identifier type: RIAD internal identifier)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:END_MNTH_YYYY_MM_DD" use="required" name="DT_RFRNC">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Reference date</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_ANCRDT_SRVY_ID" use="required" fixed="BCL_ANCRDT_T2M" name="TYP_RPRTNG">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Type of Reporting</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_SBMSSN_TYP" use="required" name="SBMSSN_TYP">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Submission type</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_XS_BOOLEAN" name="IS_EMRGNCY_CRRCTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Is emergency correction</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="BCL_ANCRDT_HDR_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Survey header data for credit data - BCL Collection</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:DataSetType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                    <xs:element type="common:DataProviderReferenceType" form="unqualified" minOccurs="0" name="DataProvider"/>
+                    <xs:choice minOccurs="1">
+                        <xs:element type="ObsBCL_ANCRDT_HDR_C" form="unqualified" maxOccurs="unbounded" name="Obs"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ObsBCL_ANCRDT_PRTCTN_RCVD_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Protection received data - BCL Collection (observations)</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:ObsType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+                <xs:attribute type="common:IDType" use="prohibited" name="type"/>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="PRTCTN_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Protection identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" name="PRTCTN_PRVDR_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Protection provider identifier (entity ID)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:TYP_PRTCTN_ANCRDT_CLLCTN" name="TYP_PRTCTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Type of protection</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="PRTCTN_VL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Protection value</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:TYP_PRTCTN_VL_ANCRDT_CLLCTN" name="TYP_PRTCTN_VL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Type of protection value</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:PRTCTN_VLTN_APPRCH_ANCRDT_CLLCTN" name="PRTCTN_VLTN_APPRCH">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Protection valuation approach</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:ISO3166_DSJNT_C_CLLCTN" name="RECL_CNTRY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Country where the collateral is located.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NUTS3_ANCRDT_CLLCTN" name="RECL_TRRTRL_UNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Region where the collateral is located.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:LTN_EXT_255" name="RECL_PSTL_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Postal code where the collateral is located.</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_PRTCTN_VL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Date of protection value</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_MTRTY_PRTCTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Maturity date of the protection</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="ORGNL_PRTCTN_VL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Original protection value</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_ORGNL_PRTCTN_VL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Date of original protection value</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_DT_PRTCTN_VL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_DT_ORGNL_PRTCTN_VL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_DT_MTRTY_PRTCTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_RECL_CNTRY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_RECL_TRRTRL_UNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_RECL_PSTL_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_PRTCTN_VL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_ORGNL_PRTCTN_VL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_PRTCTN_VLTN_APPRCH">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_PRTCTN_PRVDR_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_TYP_PRTCTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_TYP_PRTCTN_VL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="BCL_ANCRDT_PRTCTN_RCVD_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Protection received data - BCL Collection</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:DataSetType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                    <xs:element type="common:DataProviderReferenceType" form="unqualified" minOccurs="0" name="DataProvider"/>
+                    <xs:choice minOccurs="1">
+                        <xs:element type="ObsBCL_ANCRDT_PRTCTN_RCVD_C" form="unqualified" maxOccurs="unbounded" name="Obs"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ObsBCL_ANCRDT_INSTRMNT_PRTCTN_RCVD_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Instrument-protection received data - BCL Collection (observations)</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:ObsType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+                <xs:attribute type="common:IDType" use="prohibited" name="type"/>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="CNTRCT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Contract identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="INSTRMNT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Instrument identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="PRTCTN_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Protection identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="PRTCTN_ALLCTD_VL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Protection allocated value</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="THRD_PRTY_PRRTY_CLMS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Third party priority claims against the protection</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_PRTCTN_ALLCTD_VL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_THRD_PRTY_PRRTY_CLMS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="BCL_ANCRDT_INSTRMNT_PRTCTN_RCVD_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Instrument-protection received data - BCL Collection</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:DataSetType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                    <xs:element type="common:DataProviderReferenceType" form="unqualified" minOccurs="0" name="DataProvider"/>
+                    <xs:choice minOccurs="1">
+                        <xs:element type="ObsBCL_ANCRDT_INSTRMNT_PRTCTN_RCVD_C" form="unqualified" maxOccurs="unbounded" name="Obs"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ObsBCL_ANCRDT_ENTTY_RSK_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Counterparty risk data - BCL Collection (observations)</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:ObsType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+                <xs:attribute type="common:IDType" use="prohibited" name="type"/>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="ENTTY_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Entity ID</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL__0TO1_6D" name="PD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Probability of default</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_PD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="BCL_ANCRDT_ENTTY_RSK_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Counterparty risk data - BCL Collection</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:DataSetType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                    <xs:element type="common:DataProviderReferenceType" form="unqualified" minOccurs="0" name="DataProvider"/>
+                    <xs:choice minOccurs="1">
+                        <xs:element type="ObsBCL_ANCRDT_ENTTY_RSK_C" form="unqualified" maxOccurs="unbounded" name="Obs"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ObsBCL_ANCRDT_ENTTY_DFLT_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Counterparty default data - BCL Collection (observations)</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:ObsType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+                <xs:attribute type="common:IDType" use="prohibited" name="type"/>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="ENTTY_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Entity ID</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:CRDT_QLTY_DFLT_STTS_ANCRDT_CLLCTN" name="DFLT_STTS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Default status</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_DFLT_STTS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Date of default status</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_DFLT_STTS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_DT_DFLT_STTS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="BCL_ANCRDT_ENTTY_DFLT_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Counterparty default data - BCL Collection</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:DataSetType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                    <xs:element type="common:DataProviderReferenceType" form="unqualified" minOccurs="0" name="DataProvider"/>
+                    <xs:choice minOccurs="1">
+                        <xs:element type="ObsBCL_ANCRDT_ENTTY_DFLT_C" form="unqualified" maxOccurs="unbounded" name="Obs"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+</xs:schema>
