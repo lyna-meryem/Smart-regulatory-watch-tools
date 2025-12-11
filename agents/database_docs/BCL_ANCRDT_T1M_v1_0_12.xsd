@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:bclcnstrnt="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_12/BCL_LU_ANCRDT_C_CONSTRAINTS" xmlns:message="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:ecbfrmt="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_12/ECB_LU_ANCRDT_C_FORMATS" xmlns="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_12/BCL_ANCRDT_T1M" xmlns:bclfrmt="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_12/BCL_LU_ANCRDT_C_FORMATS" xmlns:dsd="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/structurespecific" xmlns:ecbcnstrnt="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_12/ECB_LU_ANCRDT_C_CONSTRAINTS" xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" targetNamespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_12/BCL_ANCRDT_T1M" attributeFormDefault="unqualified" elementFormDefault="qualified">
+    <xs:import namespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_12/BCL_LU_ANCRDT_C_FORMATS" schemaLocation="BCL_LU_ANCRDT_C_FORMATS_v1_0_12.xsd"/>
+    <xs:import namespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_12/BCL_LU_ANCRDT_C_CONSTRAINTS" schemaLocation="BCL_LU_ANCRDT_C_CONSTRAINTS_v1_0_12.xsd"/>
+    <xs:import namespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_12/ECB_LU_ANCRDT_C_FORMATS" schemaLocation="ECB_LU_ANCRDT_C_FORMATS_v1_0_12.xsd"/>
+    <xs:import namespace="http://www.bcl.lu/rf/sdmx-ml/LU_ANCRDT/v1_0_12/ECB_LU_ANCRDT_C_CONSTRAINTS" schemaLocation="ECB_LU_ANCRDT_C_CONSTRAINTS_v1_0_12.xsd"/>
+    <xs:import namespace="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" schemaLocation="SDMXCommon.xsd"/>
+    <xs:import namespace="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/data/structurespecific" schemaLocation="SDMXDataStructureSpecific.xsd"/>
+    <xs:import namespace="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" schemaLocation="SDMXMessage.xsd"/>
+    <xs:complexType name="ObsBCL_ANCRDT_HDR_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Survey header data for credit data - BCL Collection (observations)</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:ObsType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+                <xs:attribute type="common:IDType" use="prohibited" name="type"/>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_50" use="required" name="RPRTNG_AGNT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Reporting agent identifier (identifier type: RIAD internal identifier)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_50" use="required" name="OBSRVD_AGNT_CD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Observed agent identifier (identifier type: RIAD internal identifier)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:END_MNTH_YYYY_MM_DD" use="required" name="DT_RFRNC">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Reference date</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_ANCRDT_SRVY_ID" use="required" fixed="BCL_ANCRDT_T1M" name="TYP_RPRTNG">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Type of Reporting</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclcnstrnt:BCL_SBMSSN_TYP" use="required" name="SBMSSN_TYP">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Submission type</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_XS_BOOLEAN" name="IS_EMRGNCY_CRRCTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Is emergency correction</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="BCL_ANCRDT_HDR_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Survey header data for credit data - BCL Collection</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:DataSetType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                    <xs:element type="common:DataProviderReferenceType" form="unqualified" minOccurs="0" name="DataProvider"/>
+                    <xs:choice minOccurs="1">
+                        <xs:element type="ObsBCL_ANCRDT_HDR_C" form="unqualified" maxOccurs="unbounded" name="Obs"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ObsBCL_ANCRDT_JNT_LBLTS_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Joint liabilities data - BCL Collection (observations)</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:ObsType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+                <xs:attribute type="common:IDType" use="prohibited" name="type"/>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="ENTTY_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Entity ID</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="CNTRCT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Contract identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="INSTRMNT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Instrument identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="JNT_LBLTY_AMNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Joint liability amount</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_JNT_LBLTY_AMNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="BCL_ANCRDT_JNT_LBLTS_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Joint liabilities data - BCL Collection</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:DataSetType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                    <xs:element type="common:DataProviderReferenceType" form="unqualified" minOccurs="0" name="DataProvider"/>
+                    <xs:choice minOccurs="1">
+                        <xs:element type="ObsBCL_ANCRDT_JNT_LBLTS_C" form="unqualified" maxOccurs="unbounded" name="Obs"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ObsBCL_ANCRDT_INSTRMNT_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Instrument data - BCL Collection (observations)</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:ObsType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+                <xs:attribute type="common:IDType" use="prohibited" name="type"/>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="CNTRCT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Contract identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="INSTRMNT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Instrument identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:TYP_INSTRMNT_ANCRDT_CLLCTN" name="TYP_INSTRMNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Type of instrument</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:TYP_AMRTSTN_ANCRDT_CLLCTN" name="TYP_AMRTSTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Type of amortisation</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:ISO4217" name="CRRNCY_DNMNTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Currency denomination of instruments</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:FDCRY_ANCRDT_CLLCTN" name="FDCRY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Fiduciary instrument</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_INCPTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Inception date</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_END_INTRST_ONLY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">End date of the interest-only period</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ALL_6D" name="INTRST_RT_CP">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Interest rate cap</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ALL_6D" name="INTRST_RT_FLR">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Interest rate floor</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:FRQNCY_INTRST_RT_RST_ANCRDT_CLLCTN" name="INTRST_RT_RST_FRQNCY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Interest rate reset frequency</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ALL_6D" name="INTRST_RT_SPRD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Interest rate spread / margin</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:TYP_INTRST_RT_ANCRDT_CLLCTN" name="TYP_INTRST_RT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Type of interest rate</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_LGL_FNL_MTRTY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Legal final maturity date</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="CMMTMNT_INCPTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Commitment amount at inception</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:FRQNCY_PYMNT_ANCRDT_CLLCTN" name="PYMNT_FRQNCY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Payment frequency</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:PRJCT_FNNC_LN_ANCRDT_CLLCTN" name="PRJCT_FNNC_LN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Project finance loan</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:PRPS_ANCRDT_CLLCTN" name="PRPS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Purpose</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:RCRS_ANCRDT_CLLCTN" name="RCRS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Exposure with recourse</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:RFRNC_RT_ANCRDT_CLLCTN" name="RFRNC_RT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Reference rate</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_STTLMNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Settlement date</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:SBRDNTD_DBT_ANCRDT_CLLCTN" name="SBRDNTD_DBT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Subordinated debt</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" name="SYNDCTD_CNTRCT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Syndicated contract identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:RPYMNT_RGHTS_ANCRDT_CLLCTN" name="RPYMNT_RGHTS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Repayment rights</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="FV_CHNG_CR_BFR_PRCHS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Fair value changes due to changes in credit risk before purchase</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_DT_STTLMNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_DT_LGL_FNL_MTRTY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_DT_INCPTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_DT_END_INTRST_ONLY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_FDCRY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_INTRST_RT_RST_FRQNCY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_PYMNT_FRQNCY">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_CRRNCY_DNMNTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_FV_CHNG_CR_BFR_PRCHS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_CMMTMNT_INCPTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_PRJCT_FNNC_LN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_PRPS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_RCRS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_RFRNC_RT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_INTRST_RT_CP">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_INTRST_RT_SPRD">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_INTRST_RT_FLR">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_RPYMNT_RGHTS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_SBRDNTD_DBT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_SYNDCTD_CNTRCT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_TYP_AMRTSTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_TYP_INSTRMNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_TYP_INTRST_RT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="BCL_ANCRDT_INSTRMNT_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Instrument data - BCL Collection</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:DataSetType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                    <xs:element type="common:DataProviderReferenceType" form="unqualified" minOccurs="0" name="DataProvider"/>
+                    <xs:choice minOccurs="1">
+                        <xs:element type="ObsBCL_ANCRDT_INSTRMNT_C" form="unqualified" maxOccurs="unbounded" name="Obs"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ObsBCL_ANCRDT_FNNCL_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Financial data - BCL Collection (observations)</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:ObsType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+                <xs:attribute type="common:IDType" use="prohibited" name="type"/>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="CNTRCT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Contract identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="INSTRMNT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Instrument identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ALL_6D" name="ANNLSD_AGRD_RT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Interest rate</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_NXT_INTRST_RT_RST">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Next interest rate reset date</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:CRDT_QLTY_DFLT_STTS_ANCRDT_CLLCTN" name="DFLT_STTS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Default status</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_DFLT_STTS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Date of default status</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="TRNSFRRD_AMNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Transferred amount</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="ARRRS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Arrears for the instrument</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:FLL_YYYY_MM_DD" name="DT_PST_D">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Date of past due</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:TYP_TRNSFR_ANCRDT_CLLCTN" name="TYP_SCRTSTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Type of securitisation</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="OTSTNDNG_NMNL_AMNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Outstanding nominal amount</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:ALL_2D" name="ACCRD_INTRST">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Accrued interest (accounting)</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbfrmt:NN_NGTV_2D" name="OFF_BLNC_SHT_AMNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Off-balance sheet amount</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_DFLT_STTS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_DT_DFLT_STTS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_DT_NXT_INTRST_RT_RST">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_DT_PST_D">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_OFF_BLNC_SHT_AMNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_TRNSFRRD_AMNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_ARRRS">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_ACCRD_INTRST">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_OTSTNDNG_NMNL_AMNT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN" name="NEVS_ANNLSD_AGRD_RT">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:NEVS_CLLCTN_WTHT_NA" name="NEVS_TYP_SCRTSTN">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Null explanatory values</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="BCL_ANCRDT_FNNCL_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Financial data - BCL Collection</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:DataSetType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                    <xs:element type="common:DataProviderReferenceType" form="unqualified" minOccurs="0" name="DataProvider"/>
+                    <xs:choice minOccurs="1">
+                        <xs:element type="ObsBCL_ANCRDT_FNNCL_C" form="unqualified" maxOccurs="unbounded" name="Obs"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ObsBCL_ANCRDT_ENTTY_INSTRMNT_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Counterparty-instrument data - BCL Collection (observations)</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:ObsType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+                <xs:attribute type="common:IDType" use="prohibited" name="type"/>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="ENTTY_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Entity ID</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="CNTRCT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Contract identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="bclfrmt:BCL_RSTRCTD_ID_60" use="required" name="INSTRMNT_ID">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Instrument identifier</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+                <xs:attribute type="ecbcnstrnt:ENTTY_RL_ANCRDT" use="required" name="ENTTY_RL">
+                    <xs:annotation>
+                        <xs:documentation xml:lang="en">Entity role</xs:documentation>
+                    </xs:annotation>
+                </xs:attribute>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="BCL_ANCRDT_ENTTY_INSTRMNT_C">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Counterparty-instrument data - BCL Collection</xs:documentation>
+        </xs:annotation>
+        <xs:complexContent>
+            <xs:restriction base="dsd:DataSetType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" ref="common:Annotations"/>
+                    <xs:element type="common:DataProviderReferenceType" form="unqualified" minOccurs="0" name="DataProvider"/>
+                    <xs:choice minOccurs="1">
+                        <xs:element type="ObsBCL_ANCRDT_ENTTY_INSTRMNT_C" form="unqualified" maxOccurs="unbounded" name="Obs"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute type="xs:gMonthDay" use="prohibited" name="REPORTING_YEAR_START_DAY"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+</xs:schema>
